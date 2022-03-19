@@ -125,13 +125,7 @@
 }
 
 .link--quickLink::after {
-  content: url("assets/icons/nav-arrow-right.svg");
-  display: block;
-  position: absolute;
-  color: #717786;
-  right: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .link--quickOrderButton {
@@ -155,18 +149,18 @@
   transform: translate(-50%, -50%);
 }
 .link--order-quote {
-	margin: 0 16px 16px;
+  margin: 0 16px 16px;
   width: 92%;
   padding: 13px 0;
   font-size: 18px;
 }
 
 .link--menu-order-quote {
-	text-decoration: none;
-	font-size: 16px;
-	line-height: 44px;
-	font-family: Roboto;
-	color: rgb(113, 119, 134);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 44px;
+  font-family: Roboto;
+  color: rgb(113, 119, 134);
   font-size: 20px;
   line-height: 28px;
   color: #000;
@@ -183,7 +177,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: #007f7f;
   height: 100%;
   font-weight: 500;
   font-size: 14px;

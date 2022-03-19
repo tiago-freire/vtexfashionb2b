@@ -17,10 +17,10 @@
       "login#drawer",
       // Deprecated
       // "locale-switcher#drawer",
-      "rich-text#explore",
+      // "rich-text#explore",
       "menu#drawer",
-      "flex-layout.row#quickOrder",
-      "flex-layout.row#OrderQuote"
+      "flex-layout.row#quickOrder"/* ,
+      "flex-layout.row#OrderQuote" */
     ],
     "props": {
       "blockClass": "drawerInnerCol"
@@ -46,7 +46,7 @@
     "children": ["link#menu-order-quote"]
   },
   "link#quickOrder": {
-    "children": ["rich-text#quickTitle", "rich-text#quickText"],
+    "children": ["rich-text#quickTitle"],
     "props": {
       "blockClass": "quickLink",
       "href": "/quickorder"
@@ -54,19 +54,13 @@
   },
   "rich-text#quickTitle": {
     "props": {
-      "text": "## Quick Order",
+      "text": "Quick Order",
       "blockClass": "quickTitle"
-    }
-  },
-  "rich-text#quickText": {
-    "props": {
-      "text": "Shop products with a few clicks",
-      "blockClass": "quickText"
     }
   },
   "link#menu-order-quote": {
     "props": {
-      "label": "My Quotes",
+      "label": "Minhas cotações",
       "href": "/b2b-quotes",
       "blockClass": "menu-order-quote"
     }
@@ -74,13 +68,13 @@
   "login#drawer": {
     "props": {
       "blockClass": "loginDrawer",
-      "iconLabel": "Hello, sign in",
+      "iconLabel": "Entrar",
       "mirrorTooltipToRight": true
     }
   },
   "rich-text#explore": {
     "props": {
-      "text": "## Explore",
+      "text": "## Explorar",
       "blockClass": "menuTitle"
     }
   },

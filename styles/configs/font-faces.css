@@ -24,3 +24,10 @@
     url("assets/fonts/roboto-v20-latin-700.woff2") format("woff2"),
     url("assets/fonts/roboto-v20-latin-700.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Fabriga";
+  src: url("assets/fonts/Fabriga.woff2") format("woff2"),
+    url("assets/fonts/Fabriga.ttf") format("ttf");
+  font-weight: normal;
+}

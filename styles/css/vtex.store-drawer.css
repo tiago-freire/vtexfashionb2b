@@ -14,12 +14,13 @@
 }
 
 .closeIconContainer--menuDrawer {
-  background: #f3f9ff;
+  background: #007f7f;
   margin-bottom: 40px;
 }
 
 .menuIcon {
-  border: 1px solid #dee7ef;
+  border: 1px solid #007f7f;
+  background-color: #007f7f;
   border-radius: 4px;
   box-sizing: border-box;
   color: #fff;

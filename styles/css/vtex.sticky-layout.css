@@ -1,5 +1,5 @@
 .container--headerMobile {
-  background: #597298;
+  background: var(--b2b-header-blue-medium);
   z-index: 999;
 }
 
