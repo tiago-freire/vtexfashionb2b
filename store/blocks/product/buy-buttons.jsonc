@@ -32,7 +32,7 @@
     "props": {
       "blockClass": "buy-now",
       "isOneClickBuy": true,
-      "text": "Buy Now"
+      "text": "Comprar agora"
     }
   }
 }

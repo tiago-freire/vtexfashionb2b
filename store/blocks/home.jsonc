@@ -8,11 +8,11 @@
       "flex-layout.row#shopByCategory",
       // Deprecated
       // "flex-layout.row#shopByBrand",
+      "flex-layout.row#bannerTrendind",
+      "flex-layout.row#trending",
       "flex-layout.row#shelf1",
       "flex-layout.row#imageBanners",
-      "flex-layout.row#singleBanner",
       "flex-layout.row#popular",
-      "flex-layout.row#trending",
       "flex-layout.row#benefits",
       "flex-layout.row#newsletter"
     ]
@@ -20,7 +20,8 @@
 
   "flex-layout.row#imageList": {
     "props": {
-      "blockClass": "full-banner"
+      "blockClass": "full-banner",
+      "fullWidth": true
     },
     "children": ["list-context.image-list#homeBanners"]
   },
@@ -34,19 +35,16 @@
   "list-context.image-list#homeBanners": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 328,
+      "height": 480,
       "images": [
         {
           "width": "1440px",
-          "image": "assets/placeholders/fullbannerDesktop.png",
-          "mobileImage": "assets/placeholders/fullbannerMobile.png",
-          "description": "something something"
-        },
-        {
-          "width": "1440px",
-          "image": "assets/placeholders/fullbannerDesktop.png",
-          "mobileImage": "assets/placeholders/fullbannerMobile.png",
-          "description": "something something"
+          "image": "assets/banners/banner-top-home-fashion-b2b.png",
+          "mobileImage": "assets/banners/banner-top-home-fashion-b2b.png",
+          "description": "Moda Verão - Nova Coleção",
+          "link": {
+            "url": "/verao"
+          }
         }
       ]
     }
@@ -59,7 +57,7 @@
         "tablet": 1,
         "phone": 1
       },
-      "infinite": false,
+      "infinite": true,
       "showNavigationArrows": "desktopOnly"
     }
   },
@@ -77,7 +75,8 @@
   },
   "rich-text#shopByTitle": {
     "props": {
-      "text": "### Shop by category",
+      "text": "### Compre por Categorias",
+      "textPosition": "CENTER",
       "blockClass": "shopByCategoryTitle"
     }
   },
@@ -102,114 +101,114 @@
   "link#shoBy1": {
     "children": ["image#shoBy1", "rich-text#cat1"],
     "props": {
-      "href": "/apparel",
+      "href": "/feminino",
       "blockClass": "shopByLink"
     }
   },
   "link#shoBy2": {
     "children": ["image#shoBy2", "rich-text#cat2"],
     "props": {
-      "href": "/beverage",
+      "href": "/masculino",
       "blockClass": "shopByLink"
     }
   },
   "link#shoBy3": {
     "children": ["image#shoBy3", "rich-text#cat3"],
     "props": {
-      "href": "/sporting",
+      "href": "/calcados",
       "blockClass": "shopByLink"
     }
   },
   "link#shoBy4": {
     "children": ["image#shoBy4", "rich-text#cat4"],
     "props": {
-      "href": "/Agribusiness",
+      "href": "/infantil",
       "blockClass": "shopByLink"
     }
   },
   "link#shoBy5": {
     "children": ["image#shoBy5", "rich-text#cat5"],
     "props": {
-      "href": "/home-appliance",
+      "href": "/accessories",
       "blockClass": "shopByLink"
     }
   },
   "link#shoBy6": {
     "children": ["image#shoBy6", "rich-text#cat6"],
     "props": {
-      "href": "/computer",
+      "href": "/brands",
       "blockClass": "shopByLink"
     }
   },
   "image#shoBy1": {
     "props": {
-      "src": "assets/placeholders/apparelPlaceholder.png",
+      "src": "assets/icons/female.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy2": {
     "props": {
-      "src": "assets/placeholders/beveragePlaceholder.png",
+      "src": "assets/icons/male.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy3": {
     "props": {
-      "src": "assets/placeholders/sportingPlaceholder.png",
+      "src": "assets/icons/shoes.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy4": {
     "props": {
-      "src": "assets/placeholders/agribusinessPlaceholder.png",
+      "src": "assets/icons/childish.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy5": {
     "props": {
-      "src": "assets/placeholders/homeAppliancePlaceholder.png",
+      "src": "assets/icons/accessories.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy6": {
     "props": {
-      "src": "assets/placeholders/computerPlaceholder.png",
+      "src": "assets/icons/brands.svg",
       "blockClass": "shoByImage"
     }
   },
   "rich-text#cat1": {
     "props": {
-      "text": "Apparel",
+      "text": "Feminino",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat2": {
     "props": {
-      "text": "Beverage",
+      "text": "Masculino",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat3": {
     "props": {
-      "text": "Sporting",
+      "text": "Calçados",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat4": {
     "props": {
-      "text": "Agribusiness",
+      "text": "Infantil",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat5": {
     "props": {
-      "text": "Home Appliance",
+      "text": "Acessórios",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat6": {
     "props": {
-      "text": "Computer",
+      "text": "Marcas",
       "blockClass": "shopByCategory"
     }
   },
@@ -407,16 +406,46 @@
       "textAlignment": "CENTER"
     }
   },
-  "flex-layout.row#singleBanner": {
+  "flex-layout.row#bannerTrendind": {
     "props": {
-      "blockClass": "singleBanner"
+      "blockClass": "full-banner",
+      "fullWidth": true
     },
-    "children": ["image#singleBanner"]
+    "children": ["list-context.image-list#bannerTrendind"]
   },
-  "image#singleBanner": {
+  "list-context.image-list#bannerTrendind": {
+    "children": ["slider-layout#demo-images"],
     "props": {
-      "src": "",
-      "maxHeight": 256
+      "height": 480,
+      "images": [
+        {
+          "width": "1440px",
+          "image": "assets/banners/banner-trends-fashion-b2b.png",
+          "mobileImage": "assets/banners/banner-trends-fashion-b2b.png",
+          "description": "Novidades da semana",
+          "link": {
+            "url": "/trending"
+          }
+        }
+      ]
     }
-  }
+  }/* ,
+  "flex-layout.row#bannerTrendind": {
+    "props": {
+      "blockClass": "singleBanner",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["image#bannerTrendind"]
+  },
+  "image#bannerTrendind": {
+    "props": {
+      "src": "assets/banners/banner-trends-fashion-b2b.png",
+      "maxHeight": 256,
+      "blockClass": "singleBanner",
+      "link": {
+        "url": "/trending"
+      }
+    }
+  } */
 }

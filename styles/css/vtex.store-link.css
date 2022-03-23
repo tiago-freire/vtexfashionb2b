@@ -35,11 +35,11 @@
 }
 
 .link--shopByLink:hover :global(.vtex-rich-text-0-x-paragraph--shopByCategory) {
-  color: #0067c7;
+  color: var(--fresh-blue);
 }
 
 .link--shopByLink:hover .childrenContainer {
-  border: 1px solid #0067c7;
+  border: 1px solid var(--fresh-blue);
 }
 
 .childrenContainer--shopByLink {
@@ -49,10 +49,11 @@
   flex-flow: column nowrap;
   max-width: 216px;
   height: 196px;
-  background: #f3f9ff;
+  background: #fff;
   border-radius: 4px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.06);
 }
 
 .childrenContainer--linkCategorySlider {
@@ -177,7 +178,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #007f7f;
+  color: var(--fresh-blue);
   height: 100%;
   font-weight: 500;
   font-size: 14px;

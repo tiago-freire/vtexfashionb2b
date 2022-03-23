@@ -5,7 +5,7 @@
 :global(.vtex-login-2-x-portalContainer),
 :global(.vtex-store-drawer-0-x-childrenContainer) {
   --black-dark: #000000;
-  --fresh-blue: #0067c7;
+  --fresh-blue: #007f7f;
   --fresh-blue-dark: #0067c7;
   --fresh-blue-lightest: #f3f9ff;
   --fresh-orange: #ff5f00;
@@ -18,7 +18,7 @@
   --lines-dark: #bdc9d6;
   --lines-darker: #a3afbc;
   --lines-light: #dee7ef;
-  --serious-blue-dark: #007f7f;
+  --serious-blue-dark: var(--fresh-blue);
   --serious-black: #142032;
   --serious-orange: #ff7d30;
   --base: #fff;

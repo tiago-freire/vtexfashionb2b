@@ -136,7 +136,7 @@
   .filterApplyButtonWrapper :global(.vtex-button) {
     height: 48px;
     color: #fff;
-    background: #007f7f;
+    background: var(--fresh-blue);
     border: none;
     font-weight: bold;
     font-family: "Roboto";
@@ -146,7 +146,7 @@
   .filterClearButtonWrapper :global(.vtex-button) {
     height: 48px;
     border: 1px solid #bdc9d6;
-    color: #007f7f;
+    color: var(--fresh-blue);
     font-weight: bold;
     font-family: "Roboto";
     font-size: 16px;

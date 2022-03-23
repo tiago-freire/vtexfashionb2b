@@ -40,7 +40,7 @@
   },
   "link#popularLink": {
     "props": {
-      "label": "See more",
+      "label": "Veja mais",
       "href": "/popular",
       "blockClass": "popularLink"
     }

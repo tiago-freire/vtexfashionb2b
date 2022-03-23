@@ -14,7 +14,7 @@
 }
 
 .flexRow--headerStripe {
-  background: var(--b2b-blue-darkest);
+  background: var(--serious-black);
 }
 
 .flexCol--drawerInnerCol :global(.vtex-login-2-x-buttonLink) {
@@ -81,12 +81,6 @@
 
 /* END - Header */
 /* BEGIN - Header */
-
-.flexRow--full-banner {
-  background-color: #3296f2;
-  margin-bottom: 1.5rem;
-}
-
 .flexRow--menuHeader {
   width: 100%;
 }
@@ -120,7 +114,7 @@
 }
 
 .flexRow--shopByCategorySection {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .flexRowContent--shopByCategory .stretchChildrenWidth {
@@ -145,7 +139,7 @@
 
   .flexRow--shopByBrandSection,
   .flexRow--shopByCategorySection {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -166,13 +160,6 @@
 }
 
 /* END - ImageBanners */
-/* BEGIN - Single Banner Home */
-
-.flexRow--singleBanner {
-  margin-bottom: 40px;
-}
-
-/* END - Single Banner Home */
 /* BEGIN - Benefits */
 
 .flexRow--benefits {

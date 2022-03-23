@@ -17,10 +17,11 @@
       "login#drawer",
       // Deprecated
       // "locale-switcher#drawer",
-      // "rich-text#explore",
-      "menu#drawer",
-      "flex-layout.row#quickOrder"/* ,
-      "flex-layout.row#OrderQuote" */
+      "rich-text#explore",
+      // "menu#drawer",
+      "category-menu",
+      "flex-layout.row#quickOrder",
+      "flex-layout.row#OrderQuote"
     ],
     "props": {
       "blockClass": "drawerInnerCol"
@@ -76,6 +77,15 @@
     "props": {
       "text": "## Explorar",
       "blockClass": "menuTitle"
+    }
+  },
+  "category-menu": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "sortSubcategories": "name",
+      "mobileMode": true
     }
   },
   "menu#drawer": {

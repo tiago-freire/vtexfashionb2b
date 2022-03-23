@@ -9,34 +9,34 @@
   },
   "flex-layout.col#trending": {
     "children": [
-      "flex-layout.row#trendingHead",
+      // "flex-layout.row#trendingHead",
       "list-context.product-list#trending"
     ]
   },
-  "flex-layout.row#trendingHead": {
-    "children": [
-      "rich-text#trendingTitle",
-      "link#trending"
-    ],
-    "props": {
-      "blockClass": "trendingHead",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true
-    }
-  },
-  "rich-text#trendingTitle": {
-    "props": {
-      "text": "### What's trending",
-      "blockClass": "trendingTitle"
-    }
-  },
-  "link#trending": {
-    "props": {
-      "label": "See all",
-      "blockClass": "trendingLink",
-      "href": "/trending"
-    }
-  },
+  // "flex-layout.row#trendingHead": {
+  //   "children": [
+  //     "rich-text#trendingTitle",
+  //     "link#trending"
+  //   ],
+  //   "props": {
+  //     "blockClass": "trendingHead",
+  //     "preventHorizontalStretch": true,
+  //     "preserveLayoutOnMobile": true
+  //   }
+  // },
+  // "rich-text#trendingTitle": {
+  //   "props": {
+  //     "text": "### What's trending",
+  //     "blockClass": "trendingTitle"
+  //   }
+  // },
+  // "link#trending": {
+  //   "props": {
+  //     "label": "Ver tudo",
+  //     "blockClass": "trendingLink",
+  //     "href": "/trending"
+  //   }
+  // },
   "list-context.product-list#trending": {
     "blocks": [
       "product-summary.shelf#trending"

@@ -5,11 +5,11 @@
       "flex-layout.row#shopByCategory",
       // Deprecated
       // "flex-layout.row#shopByBrandMobile",
+      "flex-layout.row#singleBannerMobile",
+      "flex-layout.row#trending",
       "flex-layout.row#shelfMobile",
       "flex-layout.row#banners",
-      "flex-layout.row#singleBannerMobile",
       "flex-layout.row#popular",
-      "flex-layout.row#trending",
       "flex-layout.row#benefits",
       "flex-layout.row#newsletter"
     ]
@@ -134,7 +134,7 @@
   },
   "image#singleBannerMobile": {
     "props": {
-      "src": "assets/placeholders/singleBannerMobile.png",
+      "src": "assets/banners/banner-trends-fashion-b2b.png",
       "maxHeight": 160,
       "blockClass": "singleBanner"
     }

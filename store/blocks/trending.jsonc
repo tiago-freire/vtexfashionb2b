@@ -63,7 +63,7 @@
 
   "rich-text#title--trending": {
     "props": {
-      "text": "## What's trending",
+      "text": "## Novidades da semana",
       "blockClass": "title"
     }
   }

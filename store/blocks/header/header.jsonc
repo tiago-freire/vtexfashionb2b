@@ -59,7 +59,8 @@
       "colSizing": "auto"
     },
     "children": [
-      "drawer",
+      // "drawer",
+      "category-menu",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-bar",
       "link#quickOrder",
@@ -67,7 +68,6 @@
       "minicart.v2"
     ]
   },
-
   "flex-layout.col#search-bar": {
     "children": ["search-bar"],
     "props": {
@@ -86,6 +86,7 @@
     },
     "children": [
       "shopper-location",
+      "b2b-user-widget",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
@@ -99,35 +100,35 @@
   "rich-text#headStripe1": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Today's Deals](/deals)"
+      "text": "[Lançamentos](/releases)"
     }
   },
 
   "rich-text#headStripe2": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[New Releases](/releases)"
+      "text": "[Ofertas](/deals)"
     }
   },
 
   "rich-text#headStripe3": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Top Sales](/top-sales)"
+      "text": "[Mais vendidos](/top-sales)"
     }
   },
 
   "rich-text#headStripe4": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Costumer Services](/services)"
+      "text": "[Marcas](/services)"
     }
   },
 
   "rich-text#headStripe5": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Gift Cards](/gift-cards)"
+      "text": "[Acessórios](/gift-cards)"
     }
   },
 
@@ -148,7 +149,10 @@
   },
 
   "header-layout.mobile": {
-    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#mobile"]
+    "children": [
+      "flex-layout.row#demo-store-warning",
+      "sticky-layout#mobile"
+    ]
   },
 
   "sticky-layout#mobile": {
@@ -175,6 +179,7 @@
       "fullWidth": true
     },
     "children": [
+      "b2b-user-widget",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
@@ -191,7 +196,7 @@
   },
 
   "flex-layout.row#mobile": {
-    "children": ["drawer", "logo", "check-permission#login", "minicart.v2"],
+    "children": [/* "drawer" */"category-menu", "logo", "check-permission#login", "minicart.v2"],
     "props": {
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
@@ -202,7 +207,7 @@
 
   "link#orderQuote": {
     "props": {
-      "label": "My Quotes",
+      "label": "Minhas cotações",
       "href": "/b2b-quotes",
       "blockClass": "orderQuote"
     }

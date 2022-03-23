@@ -34,7 +34,7 @@
 }
 
 .sendButton :global(.vtex-button) {
-  background: #007f7f;
+  background: var(--fresh-blue);
   border: none;
 }
 
