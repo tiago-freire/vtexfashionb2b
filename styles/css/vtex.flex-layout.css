@@ -76,7 +76,7 @@
 }
 
 .flexCol--drawerInnerCol :global(.vtex-login-2-x-profile) {
-  color: #717786;
+  color: var(--black-medium);
 }
 
 /* END - Header */
@@ -152,7 +152,6 @@
   grid-column-gap: 16px;
   padding-top: 30px;
   margin-bottom: 64px;
-  border-top: 1px solid #e9eff5;
 }
 
 .flexRowContent--imageBanners .stretchChildrenWidth {
@@ -188,10 +187,8 @@
 /* END - Footer */
 /* BEGIN - Trending Shelf */
 
-.flexRow--trendingSection {
-  background: #f3f9ff;
-  padding: 48px 0px;
-  margin-bottom: 40px;
+.flexRow--full-banner {
+  padding-bottom: 40px;
 }
 
 .flexRowContent--trendingHead {
@@ -202,13 +199,13 @@
 
 /* END - Trending Shelf */
 /* BEGIN - Popular Shelf */
-
+/* 
 .flexRowContent--popularHead {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e9eff5;
   margin-bottom: 32px;
-}
+} */
 
 /* END - Popular Shelf */
 /* BEGIN - Filter */
@@ -454,7 +451,7 @@
 }
 
 .flexRow--assembly-options {
-  color: #717786;
+  color: var(--black-medium);
   line-height: 1.25rem;
 }
 

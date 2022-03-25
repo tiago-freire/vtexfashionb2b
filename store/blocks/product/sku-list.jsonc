@@ -24,7 +24,7 @@
 
   "rich-text#code": {
     "props": {
-      "text": "**Code**",
+      "text": "**Código**",
       "blockClass": "skuList",
       "width": "33.333333333%"
     }
@@ -32,7 +32,7 @@
 
   "rich-text#inventory": {
     "props": {
-      "text": "**Stock**",
+      "text": "**Estoque**",
       "blockClass": "skuList",
       "width": "33.333333333%"
     }
@@ -40,7 +40,7 @@
 
   "rich-text#price": {
     "props": {
-      "text": "**Price**",
+      "text": "**Preço**",
       "blockClass": "skuList",
       "width": "33.333333333%"
     }

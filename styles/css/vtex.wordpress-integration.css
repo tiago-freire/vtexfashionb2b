@@ -63,6 +63,6 @@
 .teaserBody {
   font-size: 0.875rem;
   line-height: 1.2857142857;
-  color: #717786;
+  color: var(--black-medium);
   margin-bottom: 24px;
 }

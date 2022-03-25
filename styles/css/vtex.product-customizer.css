@@ -20,7 +20,7 @@
 
 .textInputValue::after {
   display: inline-block;
-  color: #717786;
+  color: var(--black-medium);
   content: "Max. of 20 characters";
   font-size: 12px;
   margin-top: 8px;

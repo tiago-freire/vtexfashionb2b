@@ -144,7 +144,7 @@
   content: url("assets/icons/nav-arrow-right-blue.svg");
   display: block;
   position: absolute;
-  color: #717786;
+  color: var(--black-medium);
   right: 12px;
   top: 50%;
   transform: translate(-50%, -50%);

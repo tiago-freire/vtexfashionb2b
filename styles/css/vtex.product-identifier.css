@@ -1,5 +1,5 @@
 .product-identifier--productReference {
   font-size: 12px;
   line-height: 16px;
-  color: #717786;
+  color: var(--black-medium);
 }

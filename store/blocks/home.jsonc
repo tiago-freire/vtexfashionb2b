@@ -10,10 +10,12 @@
       // "flex-layout.row#shopByBrand",
       "flex-layout.row#bannerTrendind",
       "flex-layout.row#trending",
-      "flex-layout.row#shelf1",
-      "flex-layout.row#imageBanners",
+      // "flex-layout.row#shelf1",
       "flex-layout.row#popular",
-      "flex-layout.row#benefits",
+      "flex-layout.row#recommendations",
+      "flex-layout.row#bannerCoupon",
+      "flex-layout.row#imageBanners",
+      // "flex-layout.row#benefits",
       "flex-layout.row#newsletter"
     ]
   },
@@ -142,37 +144,37 @@
   },
   "image#shoBy1": {
     "props": {
-      "src": "assets/icons/female.svg",
+      "src": "assets/icons/category-female.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy2": {
     "props": {
-      "src": "assets/icons/male.svg",
+      "src": "assets/icons/category-male.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy3": {
     "props": {
-      "src": "assets/icons/shoes.svg",
+      "src": "assets/icons/category-shoes.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy4": {
     "props": {
-      "src": "assets/icons/childish.svg",
+      "src": "assets/icons/category-childish.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy5": {
     "props": {
-      "src": "assets/icons/accessories.svg",
+      "src": "assets/icons/category-accessories.svg",
       "blockClass": "shoByImage"
     }
   },
   "image#shoBy6": {
     "props": {
-      "src": "assets/icons/brands.svg",
+      "src": "assets/icons/category-brands.svg",
       "blockClass": "shoByImage"
     }
   },
@@ -350,10 +352,10 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#bannerThird",
+      "image#banner-1"/* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
-      "rich-text#bannerLink"
+      "rich-text#bannerLink" */
     ]
   },
   "flex-layout.col#banner2": {
@@ -361,10 +363,10 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#bannerThird",
+      "image#banner-2"/* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
-      "rich-text#bannerLink"
+      "rich-text#bannerLink" */
     ]
   },
   "flex-layout.col#banner3": {
@@ -372,40 +374,63 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#bannerThird",
+      "image#banner-3"/* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
-      "rich-text#bannerLink"
+      "rich-text#bannerLink" */
     ]
   },
-  "image#bannerThird": {
+  "image#banner-1": {
     "props": {
-      "src": "assets/placeholders/bannerSummer.png",
+      "src": "assets/banners/banner-tshirt-b2b.png",
       "maxHeight": 256,
-      "blockClass": "bannerThird"
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "/camisetas"
+      }
     }
   },
-  "rich-text#bannerTitle": {
+  "image#banner-2": {
     "props": {
-      "text": "#### Keep cool with trusted air conditioning brands",
-      "blockClass": "bannerTitle",
-      "textAlignment": "CENTER"
+      "src": "assets/banners/banner-shoes-b2b.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "/sapatos"
+      }
     }
   },
-  "rich-text#bannerDesc": {
+  "image#banner-3": {
     "props": {
-      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-      "blockClass": "bannerDesc",
-      "textAlignment": "CENTER"
+      "src": "assets/banners/banner-summer-b2b.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "/verao"
+      }
     }
   },
-  "rich-text#bannerLink": {
-    "props": {
-      "text": "[BUY AIR CONDITIONING]()",
-      "blockClass": "bannerLink",
-      "textAlignment": "CENTER"
-    }
-  },
+  // "rich-text#bannerTitle": {
+  //   "props": {
+  //     "text": "#### Keep cool with trusted air conditioning brands",
+  //     "blockClass": "bannerTitle",
+  //     "textAlignment": "CENTER"
+  //   }
+  // },
+  // "rich-text#bannerDesc": {
+  //   "props": {
+  //     "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  //     "blockClass": "bannerDesc",
+  //     "textAlignment": "CENTER"
+  //   }
+  // },
+  // "rich-text#bannerLink": {
+  //   "props": {
+  //     "text": "[BUY AIR CONDITIONING]()",
+  //     "blockClass": "bannerLink",
+  //     "textAlignment": "CENTER"
+  //   }
+  // },
   "flex-layout.row#bannerTrendind": {
     "props": {
       "blockClass": "full-banner",
@@ -429,23 +454,29 @@
         }
       ]
     }
-  }/* ,
-  "flex-layout.row#bannerTrendind": {
-    "props": {
-      "blockClass": "singleBanner",
-      "fullWidth": true,
-      "horizontalAlign": "center"
-    },
-    "children": ["image#bannerTrendind"]
   },
-  "image#bannerTrendind": {
+  "flex-layout.row#bannerCoupon": {
     "props": {
-      "src": "assets/banners/banner-trends-fashion-b2b.png",
-      "maxHeight": 256,
-      "blockClass": "singleBanner",
-      "link": {
-        "url": "/trending"
-      }
+      "blockClass": "full-banner",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#bannerCoupon"]
+  },
+  "list-context.image-list#bannerCoupon": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 480,
+      "images": [
+        {
+          "width": "1440px",
+          "image": "assets/banners/banner-coupon-b2b.png",
+          "mobileImage": "assets/banners/banner-coupon-b2b.png",
+          "description": "Cupom de desconto",
+          "link": {
+            "url": "/coupon"
+          }
+        }
+      ]
     }
-  } */
+  }
 }

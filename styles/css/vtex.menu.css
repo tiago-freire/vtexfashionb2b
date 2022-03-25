@@ -29,7 +29,7 @@
   font-size: 16px;
   line-height: 44px;
   font-family: Roboto;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .menuContainerNav--menuDrawer {

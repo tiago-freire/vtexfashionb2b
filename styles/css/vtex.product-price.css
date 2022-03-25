@@ -2,7 +2,7 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
-  color: #000000;
+  color: var(--black-medium);
 }
 
 .sellingPrice .sellingPriceValue--desktop {
@@ -11,20 +11,20 @@
 
 .sellingPriceWithTax--desktop {
   font-size: 28px;
-  font-weight: bold;
+  color: var(--fresh-blue);
 }
 
 .listPrice--desktop {
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: line-through;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .savings--desktop {
   font-size: 14px;
   line-height: 20px;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .savingsValue--desktop {
@@ -46,14 +46,14 @@
 
 .savings--savingPercentage {
   display: block;
-  background: var(--fresh-orange);
-  color: #fff;
+  color: var(--fresh-blue);
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
   padding: 0px 8px;
-  border-radius: 10px;
+  border: var(--fresh-blue) solid 1px;
+  border-radius: 6px;
 }
 
 .savings--savingPercent {

@@ -290,7 +290,7 @@
   }
 
   .resultsItem--searchMobile {
-    color: #717786;
+    color: var(--black-medium);
   }
 
   .resultsItemName--searchMobile,
@@ -354,7 +354,7 @@
 
 .productImagesContainer--desktop::after {
   display: block;
-  color: #717786;
+  color: var(--black-medium);
   content: "Roll over image to zoom in";
   padding-top: 20px;
   padding-left: 116px;
@@ -406,7 +406,7 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .skuSelectorContainer--desktop .skuSelectorSelectorImageValue {
@@ -493,7 +493,7 @@
 }
 
 .productSKUAttributesContainer--inline {
-  color: #717786;
+  color: var(--black-medium);
   font-size: 14px;
   line-height: 16px;
 }

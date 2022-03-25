@@ -23,18 +23,22 @@
   },
   "flex-layout.row#popularHead": {
     "children": [
-      "rich-text#popularTitle",
-      "link#popularLink"
+      "flex-layout.col#popularHead"/* ,
+      "link#popularLink" */
     ],
     "props": {
-      "blockClass": "popularHead",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true
+      "blockClass": "popularHead"
     }
+  },
+  "flex-layout.col#popularHead": {
+    "children": [
+      "rich-text#popularTitle"
+    ]
   },
   "rich-text#popularTitle": {
     "props": {
-      "text": "### Popular Picks",
+      "text": "### Produtos Populares",
+      "textPosition": "CENTER",
       "blockClass": "popularTitle"
     }
   },
@@ -47,7 +51,7 @@
   },
   "list-context.product-list#popular": {
     "blocks": [
-      "product-summary.shelf#minimum"
+      "product-summary.shelf#complete"
     ],
     "children": [
       "slider-layout#popularProducts"
@@ -58,28 +62,28 @@
   },
   "list-context.product-list#popularMobile": {
     "blocks": [
-      "product-summary.shelf#minimum"
+      "product-summary.shelf#complete"
     ],
     "children": [
       "slider-layout#popularProducts"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "maxItems": "4"
+      "orderBy": "OrderByTopSaleDESC"/* ,
+      "maxItems": "4" */
     }
   },
   "slider-layout#popularProducts": {
     "props": {
       "itemsPerPage": {
         "desktop": 6,
-        "tablet": 6,
-        "phone": 4
+        "tablet": 4,
+        "phone": 2
       },
       "infinite": false,
       "fullWidth": true,
-      "blockClass": "shelfPopular",
+      "blockClass": "shelfTrending"/* ,
       "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "desktopOnly"
+      "showPaginationDots": "desktopOnly" */
     }
   }
 }

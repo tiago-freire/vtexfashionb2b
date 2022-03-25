@@ -4,7 +4,7 @@
 }
 
 .specificationName {
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .specificationValue {

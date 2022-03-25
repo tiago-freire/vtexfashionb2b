@@ -48,7 +48,7 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .paragraph--demo-store-warning {
@@ -154,7 +154,7 @@
   max-width: 388px;
   width: 100%;
   margin: 0px auto 16px;
-  color: #717786;
+  color: var(--black-medium);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -194,7 +194,7 @@
   flex-flow: column nowrap;
   align-items: center;
   margin: 0;
-  color: #717786;
+  color: var(--black-medium);
   font-size: 14px;
   line-height: 20px;
   font-family: Roboto;
@@ -289,7 +289,7 @@
 /* END - Trending Shelf */
 /* BEGIN - Popular Shelf */
 
-.headingLevel3--popularTitle {
+/* .headingLevel3--popularTitle {
   font-size: 24px;
   line-height: 32px;
   color: #000;
@@ -297,7 +297,7 @@
   font-family: Roboto;
   margin: 0;
   margin-bottom: 16px;
-}
+} */
 
 /* END - Popular Shelf */
 /* BEGIN - QuickOrder */
@@ -313,7 +313,7 @@
   font-size: 14px;
   line-height: 18px;
   font-family: Roboto;
-  color: #717786;
+  color: var(--black-medium);
   margin: 0;
   margin-bottom: 24px;
 }
@@ -321,7 +321,7 @@
 .paragraph--textCategorySlider {
   font-size: 14px;
   line-height: 20px;
-  color: #717786;
+  color: var(--black-medium);
   margin: 0;
 }
 
@@ -332,7 +332,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 20px;
-  color: #717786;
+  color: var(--black-medium);
 }
 
 .heading--blogTitle {
@@ -349,7 +349,7 @@
   font-size: 14px;
   line-height: 18px;
   font-family: Roboto;
-  color: #717786;
+  color: var(--black-medium);
   margin: 0;
   margin-bottom: 24px;
 }
@@ -504,7 +504,7 @@
   .paragraph--quickOrderButtonText {
     font-size: 14px;
     line-height: 18px;
-    color: #717786;
+    color: var(--black-medium);
     margin: 0;
     max-width: 240px;
   }
@@ -596,6 +596,7 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
+  line-height: 1.2rem;
 }
 
 .paragraph--product-summary-price-message {

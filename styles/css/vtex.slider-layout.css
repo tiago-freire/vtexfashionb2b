@@ -62,26 +62,27 @@
   max-width: 100%;
 }
 
-.sliderTrack--shelfStyle1 {
-  padding: 16px 0px;
-}
-
 /* BEGIN - Trending Shelf */
-
-.sliderTrack--shelfTrending {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-  transform: initial;
-  justify-content: initial;
+.sliderArrows {
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--fresh-blue);
+  border: var(--fresh-blue) solid 1px;
 }
 
-.slide--shelfTrending {
-  width: 100% !important;
+.sliderArrows:local([disabled]) {
+  color: var(--black-medium);
+  border: var(--black-medium) solid 1px;
 }
 
-.sliderArrows--shelfAlsoView,
+.sliderArrows:active,
+.sliderArrows:hover,
+.sliderArrows:focus {
+  background-color: var(--lines-light) !important;
+}
+/* .sliderArrows--shelfAlsoView,
 .sliderArrows--categorySlider,
 .sliderArrows--shelfPopular,
 .sliderArrows--shelfStyle1 {
@@ -131,7 +132,7 @@
 .sliderLeftArrow--shelfStyle1 {
   background-position: 9px center !important;
   background-image: url("assets/icons/chevronLeftBlue.svg") !important;
-}
+} */
 
 .sliderLayoutContainer--categorySlider {
   padding: 0px 50px 28px;
@@ -162,12 +163,6 @@
   .sliderLayoutContainer--shelfAlsoView,
   .sliderLayoutContainer.sliderLayoutContainer--bannersSlider {
     padding-bottom: 38px;
-  }
-
-  .sliderTrack--shelfTrending {
-    grid-template-columns: 1fr;
-    grid-row-gap: 8px;
-    grid-column-gap: initial;
   }
 
   .sliderTrack--shelfPopular {

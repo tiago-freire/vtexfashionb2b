@@ -8,8 +8,8 @@
   "flex-layout.col#product-price": {
     "children": [
       "product-list-price#desktop",
-      "flex-layout.row#price",
-      "flex-layout.row#priceSavings"
+      "flex-layout.row#price"/* ,
+      "flex-layout.row#priceSavings" */
     ],
     "props": {
       "blockClass": "product-price"
@@ -40,7 +40,7 @@
   "product-selling-price#desktop": {
     "props": {
       "blockClass": ["desktop"],
-      "message": "{sellingPriceWithTax} (c/ taxas)"
+      "message": "{sellingPriceWithTax}/un."
     }
   },
   "product-list-price#desktop": {

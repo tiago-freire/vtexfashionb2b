@@ -5,12 +5,12 @@
       "flex-layout.row#shopByCategory",
       // Deprecated
       // "flex-layout.row#shopByBrandMobile",
-      "flex-layout.row#singleBannerMobile",
+      "flex-layout.row#bannerTrendind",
       "flex-layout.row#trending",
-      "flex-layout.row#shelfMobile",
+      // "flex-layout.row#shelfMobile",
       "flex-layout.row#banners",
       "flex-layout.row#popular",
-      "flex-layout.row#benefits",
+      // "flex-layout.row#benefits",
       "flex-layout.row#newsletter"
     ]
   },

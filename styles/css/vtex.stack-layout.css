@@ -5,6 +5,5 @@
 }
 
 .stackItem--savingsStack:last-child {
-  bottom: 28px;
-  top: initial;
+  top: 10px;
 }

@@ -39,22 +39,22 @@
   // },
   "list-context.product-list#trending": {
     "blocks": [
-      "product-summary.shelf#trending"
+      "product-summary.shelf#complete"
     ],
     "children": [
       "slider-layout#trendingProducts"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "maxItems": "6"
+      "orderBy": "OrderByReleaseDateDESC"/* ,
+      "maxItems": "6" */
     }
   },
   "slider-layout#trendingProducts": {
     "props": {
       "itemsPerPage": {
         "desktop": 6,
-        "tablet": 6,
-        "phone": 6
+        "tablet": 4,
+        "phone": 2
       },
       "infinite": false,
       "fullWidth": true,
