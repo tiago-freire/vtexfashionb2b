@@ -8,8 +8,11 @@
       "flex-layout.row#bannerTrendind",
       "flex-layout.row#trending",
       // "flex-layout.row#shelfMobile",
-      "flex-layout.row#banners",
+      // "flex-layout.row#banners",
       "flex-layout.row#popular",
+      "flex-layout.row#recommendations",
+      "flex-layout.row#bannerCoupon",
+      "flex-layout.row#imageBanners",
       // "flex-layout.row#benefits",
       "flex-layout.row#newsletter"
     ]
