@@ -184,6 +184,10 @@
   margin-top: 16px;
 }
 
+.flexRowContent--social-media-links {
+  justify-content: flex-start;
+}
+
 /* END - Footer */
 /* BEGIN - Trending Shelf */
 
@@ -250,11 +254,6 @@
 /* END - SearchPage */
 
 @media (min-width: 64rem) {
-  .flexRowContent--footer-row-1 .stretchChildrenWidth:last-child {
-    max-width: 161px;
-    width: 100% !important;
-  }
-
   .flexRowContent--paymentImages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -688,8 +687,10 @@
 }
 
 .flexRow--bg-blue-medium,
-.flexCol--bg-blue-medium {
-  background-color: var(--blue-medium);
+.flexCol--bg-blue-medium,
+.flexRow--footer-row-1 {
+  background-color: #e7e9ee;
+  border-bottom: #a1a8b3 solid 1px;
 }
 
 .flexRow--bg-fresh-blue-lightest,

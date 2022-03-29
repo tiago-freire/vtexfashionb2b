@@ -23,19 +23,14 @@
 }
 
 .label {
-  color: #142032;
+  color: var(--serious-black);
   text-transform: initial;
   font-size: 16px;
   line-height: 24px;
 }
 
 .profile {
-  color: #142032;
-}
-
-.sendButton :global(.vtex-button) {
-  background: var(--fresh-blue);
-  border: none;
+  color: var(--serious-black);
 }
 
 @media (max-width: 64rem) {
@@ -44,23 +39,28 @@
   }
 
   .container :global(.vtex-button) {
-    width: 74px;
+    width: auto;
     height: 32px;
-    border-color: #142032;
   }
 
+  .container :global(.vtex-button__label),
+  .container :global(.vtex-button)::after,
   .label {
+    display: none;
+  }
+
+  /* .label {
     display: block;
-    color: #142032;
+    color: var(--serious-black);
     font-size: 0;
     padding: 0;
   }
 
   .label::after {
-    content: "Sing in";
+    content: "Entrar";
     font-family: "Fabriga";
     font-size: 14px;
     line-height: 32px;
     font-weight: 500;
-  }
+  } */
 }

@@ -33,6 +33,10 @@
     padding: 0;
   }
 
+  .biggy-autocomplete-wrapper {
+    width: 60vw !important;
+  }
+
   .tileList .tileListList {
     grid-template-columns: 1fr;
   }

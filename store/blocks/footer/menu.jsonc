@@ -1,89 +1,138 @@
 {
-  "vtex.menu@2.x:menu#about": {
+  "vtex.menu@2.x:menu#policy": {
     "props": {
       "blockClass": "flexCol",
       "items": [
         {
-          "id": "footerItem-company",
           "type": "custom",
-          "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/company",
+            "href": "/terms",
             "noFollow": false,
-            "tagTitle": "Shop",
-            "text": "Our Company"
+            "tagTitle": "Termos de Uso",
+            "text": "Termos de Uso"
           }
         },
         {
-          "id": "footerItem-careers",
           "type": "custom",
-          "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/careers",
+            "href": "/privacy-policy",
             "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "Careers"
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
           }
         },
         {
-          "id": "footerItem-sell",
           "type": "custom",
-          "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/sell",
+            "href": "/cookies-policy",
             "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "Sell with VTEX"
-          }
-        },
-        {
-          "id": "footerItem-investor",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/investors",
-            "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "Investor Relations"
-          }
-        },
-        {
-          "id": "footerItem-advertise",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/advertise",
-            "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "Advertise with us"
-          }
-        },
-        {
-          "id": "footerItem-locations",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/locations",
-            "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "Locations"
+            "tagTitle": "Política de Cookies",
+            "text": "Política de Cookies"
           }
         }
       ]
     }
   },
+
+  "vtex.menu@2.x:menu#institutional": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/who-we-are",
+            "noFollow": false,
+            "tagTitle": "Quem Somos",
+            "text": "Quem Somos"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/stores",
+            "noFollow": false,
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/papers",
+            "noFollow": false,
+            "tagTitle": "Folhetos",
+            "text": "Folhetos"
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#help": {
+    "props": {
+      "blockClass": "flexCol",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/who-we-are",
+            // "noFollow": false,
+            // "tagTitle": "Quem Somos",
+            "text": "SAC: (21) 3174-5400"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "mailto:fashion.b2b@vtex.com.br",
+            "noFollow": false,
+            "tagTitle": "fashion.b2b@vtex.com.br",
+            "text": "fashion.b2b@vtex.com.br"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/papers",
+            // "noFollow": false,
+            // "tagTitle": "Folhetos",
+            "text": "Segunda a sexta das 08h às 22h."
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            // "type": "internal",
+            // "href": "/papers",
+            // "noFollow": false,
+            // "tagTitle": "Folhetos",
+            "text": "Sábados das 08h às 20h."
+          }
+        }
+      ]
+    }
+  },
+
   "vtex.menu@2.x:menu#costumer": {
     "props": {
       "blockClass": "flexCol",

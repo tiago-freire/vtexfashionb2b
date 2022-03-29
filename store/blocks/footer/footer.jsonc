@@ -5,9 +5,10 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footerDesktop",
-      "flex-layout.row#copyright",
-      "flex-layout.row#footerStripe"
+      "flex-layout.row#payments",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#copyright" /* ,
+      "flex-layout.row#footerStripe" */
     ],
     "props": {
       "blockClass": ["relative", "z-998"]
@@ -26,21 +27,39 @@
     }
   },
   "footer-layout.mobile": {
-    "children": ["flex-layout.row#footerMobile"]
+    "children": ["flex-layout.row#payments",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#copyright"/* "flex-layout.row#footerMobile" */]
   },
-  "flex-layout.row#footerDesktop": {
+  "flex-layout.row#payments": {
     "props": {
       "blockClass": "footer-row-1"
     },
     "children": [
       "flex-layout.col#footer-1-desktop",
-      "flex-layout.col#footer-2-desktop",
-      "flex-layout.col#footer-3-desktop",
+      // "flex-layout.col#footer-2-desktop",
+      // "flex-layout.col#footer-3-desktop",
       "flex-layout.col#footer-4-desktop"
     ]
   },
+  "flex-layout.row#footer-menu": {
+    "props": {
+      "blockClass": "footer-row-1",
+      // "width": "100%",
+      "colSizing": "equals"
+    },
+    "children": [
+      "flex-layout.col#footer-policy",
+      "flex-layout.col#footer-institutional",
+      "flex-layout.col#footer-help",
+      "flex-layout.col#social-media"
+      // "flex-layout.col#footer-2-desktop",
+      // "flex-layout.col#footer-3-desktop",
+      // "flex-layout.col#footer-4-desktop"
+    ]
+  },
   "flex-layout.col#footer-1-desktop": {
-    "children": ["rich-text#footerTitle1", "vtex.menu@2.x:menu#about"]
+    "children": ["rich-text#footerTitle1" /* , "vtex.menu@2.x:menu#policy" */]
   },
   "flex-layout.col#footer-2-desktop": {
     "children": ["rich-text#footerTitle2", "vtex.menu@2.x:menu#costumer"]
@@ -53,15 +72,47 @@
   },
   "flex-layout.col#footer-4-desktop": {
     "children": [
-      "rich-text#footerTitle4",
-      "flex-layout.row#paymentImagesDesktop",
+      // "rich-text#footerTitle4",
+      "flex-layout.row#paymentImagesDesktop" /* ,
       "rich-text#followTitle",
-      "flex-layout.row#networks"
+      "flex-layout.row#networks" */
     ],
     "props": {
       "preventVerticalStretch": true,
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "verticalAlign": "middle"
     }
+  },
+  "flex-layout.col#footer-policy": {
+    "children": ["rich-text#footer-policy", "vtex.menu@2.x:menu#policy"]
+  },
+  "flex-layout.col#footer-institutional": {
+    "children": [
+      "rich-text#footer-institutional",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#footer-help": {
+    "children": ["rich-text#footer-help", "vtex.menu@2.x:menu#help"]
+  },
+  "flex-layout.col#social-media": {
+    "children": ["rich-text#social-media", "flex-layout.row#social-media-links"]
+  },
+  "flex-layout.row#social-media-links": {
+    "props": {
+      "blockClass": "social-media-links",
+      "colSizing": "auto",
+      "rowGap": 6,
+      "colGap": 6
+    },
+    "children": ["flex-layout.col#facebook", "flex-layout.col#instagram"]
+  },
+  "flex-layout.col#facebook": {
+    "children": ["link#facebook"]
+  },
+  "flex-layout.col#instagram": {
+    "children": ["link#instagram"]
   },
   "rich-text#followTitle": {
     "props": {
@@ -71,8 +122,32 @@
   },
   "rich-text#footerTitle1": {
     "props": {
-      "text": "About us",
+      "text": "Formas de pagamento",
       "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#footer-policy": {
+    "props": {
+      "text": "Políticas",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#footer-institutional": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#footer-help": {
+    "props": {
+      "text": "Ajuda e Suporte",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#social-media": {
+    "props": {
+      "text": "Redes Sociais",
+      "blockClass": "footerMenuTitle"
     }
   },
   "rich-text#footerTitle2": {
@@ -137,8 +212,8 @@
       "blockClass": "copyrightContainer"
     },
     "children": [
-      "flex-layout.col#copyright",
-      "flex-layout.col#spacer"
+      "flex-layout.col#copyright" /* ,
+      "flex-layout.col#spacer" */
       // Deprecated
       // "vtex.menu@2.x:menu#currency"
       // "locale-switcher"
@@ -218,14 +293,17 @@
   // },
 
   "flex-layout.col#copyright": {
-    "props": {},
+    "props": {
+      "horizontalAlign": "center",
+      "width": "100%"
+    },
     "children": ["flex-layout.row#vtexLogo"]
   },
   "flex-layout.row#vtexLogo": {
     "props": {
       "preventHorizontalStretch": true
     },
-    "children": ["image#vtexLogo", "rich-text#rights"]
+    "children": [/* "image#vtexLogo",  */ "rich-text#rights"]
   },
   "image#vtexLogo": {
     "props": {
@@ -235,19 +313,23 @@
   },
   "rich-text#rights": {
     "props": {
-      "text": "2020 @ All Right Reserved to VTEX",
+      "text": "VTEX Atacado 2022 @ Todos os direitos reservados",
       "blockClass": "footerRights"
     }
   },
   "flex-layout.row#footerMobile": {
     "children": [
-      "flex-layout.row#footerMenu",
-      "flex-layout.col#payment",
+      // "flex-layout.row#footerMenu",
+      // "flex-layout.col#payment",
       // "flex-layout.row#currency",
-      "flex-layout.row#networks",
-      "rich-text#copyrightMobile",
-      "rich-text#footerTextMobile",
-      "image#vtexLogoMobile"
+      // "flex-layout.row#networks",
+      // "rich-text#copyrightMobile",
+      // "rich-text#footerTextMobile",
+      // "image#vtexLogoMobile"
+      "flex-layout.row#payments",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#copyright" /* ,
+      "flex-layout.row#footerStripe" */
     ]
   },
   // Deprecated
@@ -315,7 +397,7 @@
     }
   },
   "flex-layout.col#payment": {
-    "children": ["rich-text#payment", "flex-layout.row#paymentImages"],
+    "children": [/* "rich-text#payment",  */ "flex-layout.row#paymentImages"],
     "props": {
       "blockClass": "paymentCol"
     }
@@ -328,28 +410,36 @@
   },
   "flex-layout.row#paymentImagesDesktop": {
     "children": [
+      "image#all-cards" /* ,
       "image#visa",
       "image#mastercard",
       "image#express",
       "image#elo",
-      "image#dinners"
-    ],
+      "image#dinners" */
+    ] /* ,
     "props": {
       "colSizing": "auto",
       "blockClass": "paymentImages"
-    }
+    } */
   },
   "flex-layout.row#paymentImages": {
     "children": [
+      "image#all-cards" /* ,
       "image#visa",
       "image#mastercard",
       "image#express",
       "image#elo",
-      "image#dinners"
+      "image#dinners" */
     ],
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "paymentImages"
+    }
+  },
+  "image#all-cards": {
+    "props": {
+      "src": "assets/banners/credit-cards.png" /* ,
+      "blockClass": "paymentImage" */
     }
   },
   "image#visa": {
@@ -438,13 +528,13 @@
   },
   "image#facebook": {
     "props": {
-      "src": "assets/placeholders/facebookIcon.png",
+      "src": "assets/icons/facebook.svg",
       "blockClass": "networkImage"
     }
   },
   "image#instagram": {
     "props": {
-      "src": "assets/placeholders/instagramIcon.png",
+      "src": "assets/icons/instagram.svg",
       "blockClass": "networkImage"
     }
   },

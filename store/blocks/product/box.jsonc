@@ -47,10 +47,10 @@
   },
   "allowed-content#product-price": {
     "children": [
-      "flex-layout.row#product-price"//,
-      // "flex-layout.row#location-availability",
-      // "flex-layout.row#product-availability-and-quantity",
-      // "flex-layout.row#buy-buttons"
+      "flex-layout.row#product-price",
+      "flex-layout.row#location-availability",
+      "flex-layout.row#product-availability-and-quantity",
+      "flex-layout.row#buy-buttons"
     ]
   },
   "disallowed-content#product-price": {

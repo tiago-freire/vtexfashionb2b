@@ -68,7 +68,7 @@
 
 .container--summaryComplete .productBrandContainer {
   font-size: 14px;
-  color: #0067c7;
+  color: var(--fresh-blue);
   font-weight: 500;
   line-height: 20px;
   text-align: left;
@@ -259,7 +259,7 @@
 
 .element--summarySearch .productBrandContainer .productBrandName {
   font-size: 14px;
-  color: #0067c7;
+  color: var(--fresh-blue);
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 4px;

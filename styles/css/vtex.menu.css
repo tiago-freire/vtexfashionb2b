@@ -9,11 +9,9 @@
 }
 
 .styledLink--flexCol {
-  color: #fff;
+  color: #4A596B;
   font-size: 14px;
   line-height: 28px;
-  font-family: Roboto;
-  font-weight: 500;
 }
 
 .menuContainer--menuDrawer {

@@ -87,7 +87,8 @@
       "blockClass": "shopByCategory",
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
+      "colSizing": "auto",
+      // "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },

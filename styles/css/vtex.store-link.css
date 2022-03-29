@@ -5,7 +5,7 @@
 
 .label--popularLink,
 .label--trendingLink {
-  color: #0067c7;
+  color: var(--fresh-blue);
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -22,7 +22,7 @@
 .link--networkLink {
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.16);
+  background: #111C2D;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@
   font-size: 14px;
   line-height: 32px;
   text-align: center;
-  color: #0067c7;
+  color: var(--fresh-blue);
   background: #f3f9ff;
   text-decoration: none;
 }
@@ -204,7 +204,7 @@
   .link--networkLink {
     width: 32px;
     height: 32px;
-    background: rgba(255, 255, 255, 0.16);
+    background: #111C2D;
     border-radius: 50%;
     display: flex;
     align-items: center;

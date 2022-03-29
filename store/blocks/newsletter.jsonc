@@ -2,16 +2,16 @@
   // Deprecated
   "newsletter": {
     "props": {
-      "label": "Get news and special offers!",
+      "label": "Cadastre seu email para receber 30% de desconto na primeira compra!",
       "placeholder": "Email address",
       "submit": "submit"
     }
   },
 
   "flex-layout.row#newsletter": {
-    "children": ["rich-text#newsletter-title", "newsletter-form"],
+    "children": ["flex-layout.col#newsletter-text", "newsletter-form"],
     "props": {
-      "blockClass": ["items-center", "bg-blue-medium", "c-on-base--inverted"],
+      "blockClass": ["items-center", "bg-blue-medium"],
       "paddingBottom": {
         "desktop": 0,
         "mobile": 7
@@ -20,11 +20,20 @@
     }
   },
 
+  "flex-layout.col#newsletter-text": {
+    "children": ["rich-text#newsletter-title", "rich-text#newsletter-subtitle"]
+  },
+
   "rich-text#newsletter-title": {
     "props": {
       "blockClass": ["newsletter-title"],
-      "text": "### Get news and special offers!",
-      "textColor": "c-on-base--inverted"
+      "text": "### Cadastre seu email para receber 30% de desconto na primeira compra!"
+    }
+  },
+
+  "rich-text#newsletter-subtitle": {
+    "props": {
+      "text": "#### E receber em primeira mão nossas novidades e ofertas."
     }
   },
 

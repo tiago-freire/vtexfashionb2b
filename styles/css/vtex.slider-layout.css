@@ -51,7 +51,7 @@
 }
 
 .paginationDot.paginationDot--isActive {
-  background-color: #0067c7;
+  background-color: var(--fresh-blue);
 }
 
 .sliderLayoutContainer--benefitsSlider {
@@ -108,7 +108,7 @@
 .sliderRightArrow--shelfAlsoView,
 .sliderRightArrow--shelfPopular,
 .sliderRightArrow--shelfStyle1 {
-  border-color: #0067c7;
+  border-color: var(--fresh-blue);
 }
 
 .sliderRightArrow--shelfAlsoView,

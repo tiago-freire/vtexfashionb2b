@@ -175,7 +175,7 @@
 .link--bannerLink {
   width: 244px;
   height: 48px;
-  background-color: #0067c7;
+  background-color: var(--fresh-blue);
   border-radius: 4px;
   color: #fff;
   font-size: 14px;
@@ -230,13 +230,23 @@
 }
 
 .paragraph--footerTitle {
-  margin: 0;
+  /* margin: 0;
   color: #e1efff;
-  margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 24px;
+  margin-bottom: 16px; */
+  font-size: 32px;
+  /* line-height: 24px;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 500; */
+}
+
+.paragraph--footerMenuTitle{
+  /* margin: 0;
+  color: #e1efff;
+  margin-bottom: 16px; */
+  font-size: 22px;
+  /* line-height: 24px;
+  font-family: Roboto;
+  font-weight: 500; */
 }
 
 .paragraph--mailTo,
@@ -262,8 +272,8 @@
 
 .paragraph--footerRights {
   font-size: 14px;
-  line-height: 24px;
-  color: #fff;
+  line-height: 24px;/* 
+  color: #fff; */
 }
 
 .paragraph--followTitle {
@@ -357,6 +367,18 @@
 /* END - Search Page */
 
 @media (max-width: 64rem) {
+  .wrapper--quickTitle {
+    padding: 0.5rem;
+  }
+
+  .wrapper--quickTitle::before {
+    margin: 0;
+  }
+
+  .paragraph--quickTitle {
+    display: none;
+  }
+
   .paragraph--blogSEO {
     width: 100%;
     max-width: 100%;
@@ -568,18 +590,11 @@
 }
 
 .container--newsletter-title .heading {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 64rem) {
   .container--newsletter-title .heading {
-    font-size: 1.25rem;
-    line-height: 1.4;
-    margin-bottom: 0.75rem;
     text-align: center;
   }
 }
