@@ -46,7 +46,7 @@
 .quantitySelectorContainer :global(.vtex-input-prefix__group)::before {
   color: var(--black-medium);
   display: inline-block;
-  content: "Qty:\00a0";
+  content: "Qtd:\00a0";
   padding-left: 1rem;
 }
 

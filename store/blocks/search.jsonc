@@ -66,8 +66,8 @@
   "search-result-layout.desktop.product-comparison": {
     "children": [
       "flex-layout.row#searchLayout",
-      "product-comparison-drawer",
-      "flex-layout.row#blog"
+      "product-comparison-drawer"/* ,
+      "flex-layout.row#blog" */
     ],
     "props": {
       "pagination": "show-more",
@@ -87,7 +87,7 @@
     }
   },
   "flex-layout.col#pageContent": {
-    "children": ["flex-layout.row#imageList", "flex-layout.col#search-content"],
+    "children": [/* "flex-layout.row#imageList",  */"flex-layout.col#search-content"],
     "props": {
       "blockClass": "pageContent",
       "preventVerticalStretch": true
@@ -97,7 +97,7 @@
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
-      "flex-layout.row#SEOText",
+      // "flex-layout.row#SEOText",
       // Deprecated
       // "flex-layout.row#categorySlider",
       "flex-layout.row#searchinfo",
@@ -125,7 +125,8 @@
     "props": {
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
-      "marginBottom": 5
+      "marginBottom": 5,
+      "marginTop": 5
     }
   },
 
@@ -196,7 +197,8 @@
   },
   "flex-layout.row#fetchmore": {
     "props": {
-      "marginTop": 3
+      "marginTop": 6,
+      "marginBottom": 6
     },
     "children": ["search-fetch-more"]
   },
@@ -211,18 +213,18 @@
   },
   "search-result-layout.mobile": {
     "children": [
-      "flex-layout.row#imageList--mobile",
+      // "flex-layout.row#imageList--mobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
-      "flex-layout.row#SEOText",
+      // "flex-layout.row#SEOText",
       // Deprecated
       // "flex-layout.row#categorySlider",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore",
-      "flex-layout.row#blogMobile"
+      "flex-layout.row#fetchmore"/* ,
+      "flex-layout.row#blogMobile" */
     ],
     "props": {
       "pagination": "show-more",

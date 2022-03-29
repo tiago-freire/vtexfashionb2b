@@ -5,13 +5,13 @@
     },
     "children": [
       "flex-layout.row#stackSavings",
-      "product-summary-brand",
+      // "product-summary-brand",
       "product-summary-name",
-      "product-rating-summary",
-      "check-permission#product-summary-price",
-      "check-permission#product-summary-buy-button",
+      // "product-rating-summary",
+      "check-permission#product-summary-price-list",
+      // "check-permission#product-summary-buy-button",
       "add-to-list-btn",
-      "modal-trigger#quickview",
+      // "modal-trigger#quickview",
       "check-permission#product-comparison-block"
     ]
   },
@@ -26,8 +26,23 @@
       // "product-rating-summary",
       "check-permission#product-summary-price",
       // "check-permission#product-summary-buy-button",
-      // "add-to-list-btn",
-      "modal-trigger#quickview"
+      "add-to-list-btn"/* ,
+      "modal-trigger#quickview" */
+    ]
+  },
+  "product-summary.shelf#list": {
+    "props": {
+      "blockClass": "summaryComplete"
+    },
+    "children": [
+      "flex-layout.row#stackSavings",
+      // "product-summary-brand",
+      "product-summary-name",
+      // "product-rating-summary",
+      "check-permission#product-summary-price-list",
+      // "check-permission#product-summary-buy-button",
+      "add-to-list-btn"/* ,
+      "modal-trigger#quickview" */
     ]
   },
   "product-summary.shelf#searchBar": {

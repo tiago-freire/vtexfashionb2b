@@ -8,7 +8,7 @@
       "flex-layout.row#shopByCategory",
       // Deprecated
       // "flex-layout.row#shopByBrand",
-      "flex-layout.row#bannerTrendind",
+      "flex-layout.row#bannerReleases",
       "flex-layout.row#trending",
       // "flex-layout.row#shelf1",
       "flex-layout.row#popular",
@@ -304,7 +304,7 @@
     }
   },
   "list-context.product-list#productSlider": {
-    "blocks": ["product-summary.shelf#complete"],
+    "blocks": ["product-summary.shelf#list"],
     "children": ["slider-layout#products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -329,7 +329,7 @@
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 3,
-        "phone": 2
+        "phone": 1
       },
       "infinite": false,
       "fullWidth": true,
@@ -432,14 +432,14 @@
   //     "textAlignment": "CENTER"
   //   }
   // },
-  "flex-layout.row#bannerTrendind": {
+  "flex-layout.row#bannerReleases": {
     "props": {
       "blockClass": "full-banner",
       "fullWidth": true
     },
-    "children": ["list-context.image-list#bannerTrendind"]
+    "children": ["list-context.image-list#bannerReleases"]
   },
-  "list-context.image-list#bannerTrendind": {
+  "list-context.image-list#bannerReleases": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 480,
@@ -450,7 +450,7 @@
           "mobileImage": "assets/banners/banner-trends-fashion-b2b.png",
           "description": "Novidades da semana",
           "link": {
-            "url": "/trending"
+            "url": "/releases"
           }
         }
       ]

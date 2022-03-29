@@ -72,7 +72,7 @@
   },
 
   "flex-layout.row#description--mobile": {
-    "children": ["product-description", "product-images#gallery--mobile"],
+    "children": ["product-description"/* , "product-images#gallery--mobile" */],
     "props": {
       "blockClass": ["description"],
       "colSizing": "auto",
@@ -110,7 +110,7 @@
   },
 
   "flex-layout.row#description": {
-    "children": ["product-description#desktop", "product-images#gallery"],
+    "children": ["product-description#desktop"/* , "product-images#gallery" */],
     "props": {
       "blockClass": ["description"],
       "colSizing": "auto",

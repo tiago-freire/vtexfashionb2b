@@ -5,7 +5,7 @@
       "flex-layout.row#shopByCategory",
       // Deprecated
       // "flex-layout.row#shopByBrandMobile",
-      "flex-layout.row#bannerTrendind",
+      "flex-layout.row#bannerReleases",
       "flex-layout.row#trending",
       // "flex-layout.row#shelfMobile",
       // "flex-layout.row#banners",

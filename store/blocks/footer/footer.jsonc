@@ -313,7 +313,7 @@
   },
   "rich-text#rights": {
     "props": {
-      "text": "VTEX Atacado 2022 @ Todos os direitos reservados",
+      "text": "VTEX Fashion B2B 2022 @ Todos os direitos reservados",
       "blockClass": "footerRights"
     }
   },

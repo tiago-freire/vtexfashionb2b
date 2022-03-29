@@ -7,7 +7,7 @@
   },
 
   "flex-layout.col#buy-buttons": {
-    "children": ["flex-layout.row#add-to-cart", "flex-layout.row#buy-now"],
+    "children": [/* "flex-layout.row#add-to-cart",  */"flex-layout.row#buy-now"],
     "props": {
       "blockClass": "buy-buttons",
       "rowGap": 3
@@ -32,7 +32,7 @@
     "props": {
       "blockClass": "buy-now",
       "isOneClickBuy": true,
-      "text": "Comprar agora"
+      "text": "Comprar"
     }
   }
 }

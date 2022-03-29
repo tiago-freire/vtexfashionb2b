@@ -19,7 +19,7 @@
   },
   "list-context.product-list#alsoView": {
     "children": ["slider-layout#alsoView"],
-    "blocks": ["product-summary.shelf#normal"],
+    "blocks": ["product-summary.shelf#list"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "maxItems": 12
@@ -29,8 +29,8 @@
     "props": {
       "itemsPerPage": {
         "desktop": 6,
-        "tablet": 4,
-        "phone": 2
+        "tablet": 3,
+        "phone": 1
       },
       "infinite": false,
       "fullWidth": true,

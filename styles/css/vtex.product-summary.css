@@ -101,13 +101,15 @@
 
 .container--summaryComplete .image {
   margin-bottom: 16px;
-  width: 196px;
-  height: 196px;
+  /* width: 196px;
+  height: 196px; */
+  max-height: 380px;
   object-fit: contain;
 }
 
 .element--summaryComplete {
   padding: 0;
+  position: relative;
 }
 
 .element--summaryComplete .priceContainer {

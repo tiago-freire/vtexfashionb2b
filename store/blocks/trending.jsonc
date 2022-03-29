@@ -63,7 +63,7 @@
 
   "rich-text#title--trending": {
     "props": {
-      "text": "## Novidades da semana",
+      "text": "## Mais Vendidos",
       "blockClass": "title"
     }
   }

@@ -51,18 +51,18 @@
   },
   "list-context.product-list#recommendations": {
     "blocks": [
-      "product-summary.shelf#complete"
+      "product-summary.shelf#list"
     ],
     "children": [
       "slider-layout#recommendationsProducts"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByBestDiscountDESC"
     }
   },
   "list-context.product-list#recommendationsMobile": {
     "blocks": [
-      "product-summary.shelf#complete"
+      "product-summary.shelf#list"
     ],
     "children": [
       "slider-layout#recommendationsProducts"
@@ -76,8 +76,8 @@
     "props": {
       "itemsPerPage": {
         "desktop": 6,
-        "tablet": 4,
-        "phone": 2
+        "tablet": 3,
+        "phone": 1
       },
       "infinite": false,
       "fullWidth": true,
