@@ -9,13 +9,14 @@
   "flex-layout.col#description-and-gallery": {
     "children": [
       "flex-layout.col#divider",
-      "responsive-layout.mobile#description",
-      "responsive-layout.desktop#description",
+      // "responsive-layout.mobile#description",
+      // "responsive-layout.desktop#description",
+      "disclosure-layout#description",
       "flex-layout.col#divider"
     ],
     "props": {
-      "blockClass": "description-and-gallery",
-      "width": "74%"
+      "blockClass": "description-and-gallery"/* ,
+      "width": "74%" */
     }
   },
 
@@ -27,10 +28,10 @@
     "children": [
       "disclosure-trigger#description",
       "disclosure-content#description"
-    ],
+    ]/* ,
     "props": {
       "initialVisibility": "visible"
-    }
+    } */
   },
 
   "disclosure-trigger#description": {
@@ -59,7 +60,7 @@
   "rich-text#description-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["description", "disclosure-trigger-heading"],
-      "text": "<span>About this item</span>",
+      "text": "<span>Descrição do Produto</span>",
       "font": "t-heading-5"
     }
   },

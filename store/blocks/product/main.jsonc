@@ -4,9 +4,9 @@
     "props": {
       "blockClass": "main",
       "colGap": 7,
-      "colSizing": "auto",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "colSizing": "equal"
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true
     }
   }
 }

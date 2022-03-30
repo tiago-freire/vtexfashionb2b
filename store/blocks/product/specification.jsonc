@@ -9,8 +9,8 @@
   "flex-layout.col#specification": {
     "children": ["disclosure-layout#specification", "flex-layout.col#divider"],
     "props": {
-      "blockClass": "specification",
-      "width": "74%"
+      "blockClass": "specification"/* ,
+      "width": "74%" */
     }
   },
 
@@ -18,10 +18,10 @@
     "children": [
       "disclosure-trigger#specification",
       "disclosure-content#specification"
-    ],
+    ]/* ,
     "props": {
       "initialVisibility": "visible"
-    }
+    } */
   },
 
   "disclosure-trigger#specification": {
@@ -50,7 +50,7 @@
   "rich-text#specifications-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["specifications", "disclosure-trigger-heading"],
-      "text": "<span>Specifications</span>",
+      "text": "<span>Especificações Técnicas</span>",
       "font": "t-heading-5"
     }
   },

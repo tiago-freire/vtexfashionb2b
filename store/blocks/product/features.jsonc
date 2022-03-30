@@ -9,16 +9,16 @@
   "flex-layout.col#features": {
     "children": ["disclosure-layout#features", "flex-layout.col#divider"],
     "props": {
-      "blockClass": "specification",
-      "width": "74%"
+      "blockClass": "specification"/* ,
+      "width": "74%" */
     }
   },
 
   "disclosure-layout#features": {
-    "children": ["disclosure-trigger#features", "disclosure-content#features"],
+    "children": ["disclosure-trigger#features", "disclosure-content#features"]/* ,
     "props": {
       "initialVisibility": "visible"
-    }
+    } */
   },
 
   "disclosure-trigger#features": {
@@ -47,7 +47,7 @@
   "rich-text#features-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["features", "disclosure-trigger-heading"],
-      "text": "<span>Features & details</span>",
+      "text": "<span>Detalhes</span>",
       "font": "t-heading-5"
     }
   },
@@ -64,7 +64,7 @@
     "props": {
       "filter": {
         "type": "show",
-        "specificationGroups": ["Features & details"]
+        "specificationGroups": ["Detalhes"]
       }
     }
   },

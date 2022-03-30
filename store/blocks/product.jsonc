@@ -12,15 +12,16 @@
       "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
       "flex-layout.row#product-images",
-      "flex-layout.row#sku-selector",
+      // "flex-layout.row#sku-selector",
+      "flex-layout.row#sku-list",
       "flex-layout.row#assembly-options",
       "flex-layout.row#divider",
       "flex-layout.row#box",
       "product-kit#buy-together",
       "flex-layout.row#description-and-gallery",
-      "flex-layout.row#features",
+      // "flex-layout.row#features",
       "flex-layout.row#specification",
-      "check-permission#sticky-buy",
+      // "check-permission#sticky-buy",
       "flex-layout.row#reviews-and-ratings",
       "flex-layout.row#alsoView"
     ]
@@ -34,12 +35,13 @@
   "flex-layout.col#product": {
     "children": [
       "flex-layout.row#breadcrumb",
-      "flex-layout.row#product-details",
-      "product-kit#buy-together", // This block won't work if it's not a direct children of store.product
-      "flex-layout.row#description-and-gallery",
-      "flex-layout.row#features",
-      "flex-layout.row#specification",
-      "flex-layout.row#reviews-and-ratings"
+      // "flex-layout.row#product-details",
+      "flex-layout.row#main",
+      "product-kit#buy-together"//, // This block won't work if it's not a direct children of store.product
+      // "flex-layout.row#description-and-gallery",
+      // "flex-layout.row#features",
+      // "flex-layout.row#specification",
+      // "flex-layout.row#reviews-and-ratings"
     ]
   }
 }

@@ -4,10 +4,7 @@
   border-width: 0.0625rem;
   margin: 0 -0.5rem -0.0625rem;
   padding: 0.5rem 1rem;
-}
-
-.skuContentWrapper:focus {
-  outline: none;
+  border-color: unset;
 }
 
 .skuContentWrapper:first-child {
@@ -27,4 +24,31 @@
 .inventoryContainer,
 .highlightContent {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skuContentWrapper :global(.vtex-button) {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 0.8rem;
+}
+
+.skuContentWrapper :global(.vtex-button__label) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.buttonText {
+  text-transform: none;
+}
+
+.quantitySelectorContainer {
+  margin-bottom: 0;
+}
+
+:global(.vtex-numeric-stepper-wrapper){
+  display: flex;
+  justify-content: center;
 }

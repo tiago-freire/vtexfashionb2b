@@ -12,8 +12,8 @@
       "flex-layout.col#divider"
     ],
     "props": {
-      "blockClass": "reviews-and-ratings",
-      "width": "74%"
+      "blockClass": "reviews-and-ratings"/* ,
+      "width": "74%" */
     }
   },
 
@@ -21,10 +21,10 @@
     "children": [
       "disclosure-trigger#reviews-and-ratings",
       "disclosure-content#reviews-and-ratings"
-    ],
+    ]/* ,
     "props": {
       "initialVisibility": "visible"
-    }
+    } */
   },
 
   "disclosure-trigger#reviews-and-ratings": {
@@ -53,7 +53,7 @@
   "rich-text#reviews-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["reviews", "disclosure-trigger-heading"],
-      "text": "<span>Customer reviews</span>",
+      "text": "<span>Avaliações</span>",
       "font": "t-heading-5"
     }
   },
@@ -79,8 +79,8 @@
       "flex-layout.col#reviews-only"
     ],
     "props": {
-      "colGap": 8,
-      "colSizing": "auto",
+      "colGap": 5,
+      "colSizing": "equal",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     }
