@@ -7,17 +7,17 @@
 
 .sellerHead {
   border-radius: 0px;
-  background: #dee7ef;
+  background: var(--lines-light);
 }
 
 .sellerRow {
   padding: 16px 0px;
   border: none;
-  border-bottom: 1px solid #dee7ef;
+  border-bottom: 1px solid var(--lines-light);
 }
 
 .sellerRow:first-child {
-  border-top: 1px solid #dee7ef;
+  border-top: 1px solid var(--lines-light);
 }
 
 .sellerList,

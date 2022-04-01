@@ -56,7 +56,7 @@
   right: -12px;
   min-height: initial;
   border-radius: 50%;
-  background: #dee7ef;
+  background: var(--lines-light);
   border: none;
   outline: none;
 }

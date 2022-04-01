@@ -90,7 +90,8 @@
     "children": [/* "flex-layout.row#imageList",  */"flex-layout.col#search-content"],
     "props": {
       "blockClass": "pageContent",
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "width": "grow"
     }
   },
   "flex-layout.col#search-content": {
@@ -294,7 +295,7 @@
     "blocks": ["product-summary.shelf.product-comparison#complete"]
   },
   "gallery#mobile": {
-    "blocks": ["product-summary.shelf#normal"]
+    "blocks": ["product-summary.shelf#list"]
   }
   // Deprecated
   // "flex-layout.row#categorySlider": {

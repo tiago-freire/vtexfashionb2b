@@ -157,7 +157,7 @@
 }
 
 .imageElement--imageCategorySlider {
-  border: 1px solid #dee7ef;
+  border: 1px solid var(--lines-light);
   padding: 16px;
   border-radius: 50%;
   margin-bottom: 12px;
@@ -351,7 +351,7 @@
 .productImagesContainer--desktop::after {
   display: block;
   color: var(--black-medium);
-  content: "Roll over image to zoom in";
+  content: "Passe o cursor na imagem para aproximar";
   padding-top: 20px;
   padding-left: 116px;
   font-size: 12px;
@@ -627,6 +627,7 @@
 
 .shippingContainer :global(.vtex-address-form__postalCode) {
   width: 100%;
+  padding-bottom: 0;
 }
 
 .shippingContainer :global(.vtex-input-prefix__group) {
@@ -645,7 +646,7 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
-  color: var(--fresh-blue-dark);
+  color: var(--fresh-blue);
   width: auto;
 }
 
@@ -706,7 +707,7 @@
 
 .shippingTableRow {
   background-color: #fff;
-  border: 1px solid #dee7ef;
+  border: 1px solid var(--lines-light);
   border-radius: 0.25rem;
   display: flex;
   align-items: center;

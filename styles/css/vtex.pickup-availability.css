@@ -56,7 +56,7 @@
 .storeListContainer--default :global(.vtex-radio) {
   align-items: center;
   background-color: #f3f9ff;
-  border-right: 1px solid #dee7ef;
+  border-right: 1px solid var(--lines-light);
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   display: flex;

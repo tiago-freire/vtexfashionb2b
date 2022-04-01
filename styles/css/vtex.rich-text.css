@@ -24,7 +24,7 @@
 .container--menuTitle {
   margin-top: 38px;
   padding-top: 38px;
-  border-top: 1px solid #dee7ef;
+  border-top: 1px solid var(--lines-light);
 }
 
 .wrapper--quickTitle {
@@ -239,7 +239,7 @@
   font-weight: 500; */
 }
 
-.paragraph--footerMenuTitle{
+.paragraph--footerMenuTitle {
   /* margin: 0;
   color: #e1efff;
   margin-bottom: 16px; */
@@ -272,7 +272,7 @@
 
 .paragraph--footerRights {
   font-size: 14px;
-  line-height: 24px;/* 
+  line-height: 24px; /* 
   color: #fff; */
 }
 
@@ -313,7 +313,11 @@
 /* BEGIN - QuickOrder */
 
 .headingLevel3--titleQuickorder {
-  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+
+.paragraph--subtitleQuickorder {
+  margin: 0;
 }
 
 /* END - QuickOrder */
@@ -547,9 +551,15 @@
 }
 
 .paragraph--disclosure-trigger-heading {
-  color: #000000;
   font-weight: 500;
   font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph--disclosure-trigger-heading-quickorder {
+  color: var(--fresh-blue);
   line-height: 24px;
   margin: 0;
   padding: 0;

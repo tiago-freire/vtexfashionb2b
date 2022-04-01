@@ -133,7 +133,7 @@
   text-decoration: none;
   padding: 24px;
   background: #f2f5f9;
-  border: 1px solid #dee7ef;
+  border: 1px solid var(--lines-light);
   display: block;
   margin-bottom: 8px;
   border-radius: 4px;

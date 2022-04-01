@@ -9,21 +9,207 @@
   "responsive-layout.desktop#quickorder": {
     "children": [
       "flex-layout.row#title",
+      "disclosure-layout#quickorder-textarea",
+      "disclosure-layout#quickorder-upload",
+      "disclosure-layout#quickorder-autocomplete",
+      "disclosure-layout#quickorder-quickCategories" /* ,
       "flex-layout.row#textarea",
       "flex-layout.row#upload",
       "flex-layout.row#autocomplete",
-      "flex-layout.row#quickCategories"
+      "flex-layout.row#quickCategories" */
     ]
+  },
+
+  "disclosure-layout#quickorder-textarea": {
+    "children": [
+      "disclosure-trigger#quickorder-textarea",
+      "disclosure-content#quickorder-textarea"
+    ]
+  },
+
+  "disclosure-layout#quickorder-upload": {
+    "children": [
+      "disclosure-trigger#quickorder-upload",
+      "disclosure-content#quickorder-upload"
+    ]
+  },
+
+  "disclosure-layout#quickorder-autocomplete": {
+    "children": [
+      "disclosure-trigger#quickorder-autocomplete",
+      "disclosure-content#quickorder-autocomplete"
+    ]
+  },
+
+  "disclosure-layout#quickorder-quickCategories": {
+    "children": [
+      "disclosure-trigger#quickorder-quickCategories",
+      "disclosure-content#quickorder-quickCategories"
+    ]
+  },
+
+  "disclosure-trigger#quickorder-textarea": {
+    "children": ["flex-layout.row#disclosure-trigger-textarea"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-upload": {
+    "children": ["flex-layout.row#disclosure-trigger-upload"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-autocomplete": {
+    "children": ["flex-layout.row#disclosure-trigger-autocomplete"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "disclosure-trigger#quickorder-quickCategories": {
+    "children": ["flex-layout.row#disclosure-trigger-quickCategories"],
+    "props": {
+      "as": "div"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-textarea": {
+    "children": [
+      "rich-text#textarea-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "disclosure-trigger-description-quickorder",
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#textarea-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "<span>Copiar/Colar SKUs</span>",
+      "font": "t-heading-4"
+    }
+  },
+
+  "disclosure-content#quickorder-textarea": {
+    "children": ["flex-layout.row#textarea"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-upload": {
+    "children": [
+      "rich-text#upload-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#upload-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "<span>Enviar uma Planilha</span>",
+      "font": "t-heading-4"
+    }
+  },
+
+  "disclosure-content#quickorder-upload": {
+    "children": ["flex-layout.row#upload"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-autocomplete": {
+    "children": [
+      "rich-text#autocomplete-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#autocomplete-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "<span>Um por Um</span>",
+      "font": "t-heading-4"
+    }
+  },
+
+  "disclosure-content#quickorder-autocomplete": {
+    "children": ["flex-layout.row#autocomplete"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+
+  "flex-layout.row#disclosure-trigger-quickCategories": {
+    "children": [
+      "rich-text#quickCategories-disclosure-trigger-heading",
+      "flex-layout.col#spacer",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": ["items-end", "disclosure-trigger-description-quickorder"],
+      "colGap": 0,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#quickCategories-disclosure-trigger-heading": {
+    "props": {
+      "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
+      "text": "<span>Categorias</span>",
+      "font": "t-heading-4"
+    }
+  },
+
+  "disclosure-content#quickorder-quickCategories": {
+    "children": ["flex-layout.row#quickCategories"],
+    "props": {
+      "blockClass": "description"
+    }
   },
 
   "flex-layout.row#title": {
     "children": ["flex-layout.col#title"],
     "props": {
-      "blockClass": "quickOrderHeaderRow"
+      "blockClass": "quickOrderHeaderRow",
+      "marginBottom": 8
     }
   },
+
   "flex-layout.col#title": {
-    "children": ["rich-text#title"],
+    "children": ["rich-text#title", "rich-text#quickorder-subtitle"],
     "props": {
       "blockClass": "titleQuickorder",
       "preventVerticalStretch": true
@@ -31,8 +217,14 @@
   },
   "rich-text#title": {
     "props": {
-      "text": "### Quick Order",
+      "text": "### Pedido Rápido",
       "blockClass": "titleQuickorder"
+    }
+  },
+  "rich-text#quickorder-subtitle": {
+    "props": {
+      "text": "<span>Escolha os métodos de entrada para encomendar seus itens pré-selecionados mais rapidamente e economizar tempo.</span>",
+      "blockClass": "subtitleQuickorder"
     }
   },
 
@@ -45,8 +237,8 @@
   "quickorder-textarea": {
     "props": {
       "componentOnly": false,
-      "text": "Copy/Paste Skus",
-      "description": "[Sku's Code],[Quantity]"
+      // "text": "Copiar/Colar Skus",
+      "description": "[Código de Sku],[Quantidade]"
     }
   },
 
@@ -59,9 +251,9 @@
   "quickorder-upload": {
     "props": {
       "componentOnly": false,
-      "text": "Upload",
-      "description": "Upload a Spreadsheet with two columns (SKU, Quantity) to bulk order",
-      "downloadText": "Click here to download a spreadsheet model"
+      // "text": "Upload",
+      "description": "Faça upload de uma planilha com duas colunas (SKU, quantidade) para pedido em massa",
+      "downloadText": "Clique aqui para baixar um modelo de planilha"
     }
   },
 
@@ -74,8 +266,8 @@
   "quickorder-autocomplete": {
     "props": {
       "componentOnly": false,
-      "text": "One by One",
-      "description": "Type the product name, select, enter quantity and add to the cart"
+      // "text": "Um por um",
+      "description": "Digite o nome do produto, selecione, insira a quantidade e adicione ao carrinho"
     }
   },
 
@@ -91,8 +283,8 @@
   "quickorder-categories": {
     "props": {
       "componentOnly": false,
-      "text": "Categories",
-      "description": "Add products directly from their categories"
+      // "text": "Categorias",
+      "description": "Adicione produtos diretamente de suas categorias"
     }
   }
 }

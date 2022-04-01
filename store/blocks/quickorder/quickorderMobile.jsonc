@@ -37,13 +37,13 @@
   },
   "rich-text#byOneTitle": {
     "props": {
-      "text": "## One by one",
+      "text": "## Um por um",
       "blockClass": "quickOrderButtonTitle"
     }
   },
   "rich-text#byOneText": {
     "props": {
-      "text": "Type the product name, select, enter quantity and add to the cart",
+      "text": "Digite o nome do produto, selecione, insira a quantidade e adicione ao carrinho",
       "blockClass": "quickOrderButtonText"
     }
   },
@@ -59,13 +59,13 @@
   },
   "rich-text#byCategoryTitle": {
     "props": {
-      "text": "## Categories",
+      "text": "## Categorias",
       "blockClass": "quickOrderButtonTitle"
     }
   },
   "rich-text#byCategoryText": {
     "props": {
-      "text": "Add products directly from their categories",
+      "text": "Adicione produtos diretamente de suas categorias",
       "blockClass": "quickOrderButtonText"
     }
   }

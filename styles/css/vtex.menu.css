@@ -33,7 +33,7 @@
 .menuContainerNav--menuDrawer {
   padding-bottom: 32px;
   margin-bottom: 32px;
-  border-bottom: 1px solid #dee7ef;
+  border-bottom: 1px solid var(--lines-light);
 }
 
 .styledLinkContainer--currencyFakeDropdown {
