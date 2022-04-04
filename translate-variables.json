@@ -144,7 +144,7 @@
         "srcLang": "en-DV",
         "context": "vtex.b2b-quotes@0.x",
         "srcMessage": "store/b2b-quotes.quotes-table.expirationDate.title",
-        "targetMessage": "Expiração"
+        "targetMessage": "Data de validade"
       },
       {
         "srcLang": "en-DV",
@@ -288,7 +288,7 @@
         "srcLang": "en-DV",
         "context": "vtex.b2b-quotes@0.x",
         "srcMessage": "store/b2b-quotes.quote-details.expiration.title",
-        "targetMessage": "Expiração"
+        "targetMessage": "Data de validade"
       },
       {
         "srcLang": "en-DV",
@@ -366,7 +366,7 @@
         "srcLang": "en-DV",
         "context": "vtex.b2b-quotes@0.x",
         "srcMessage": "store/b2b-quotes.quote-details.update-history.update-details",
-        "targetMessage": "{index, plural, =0{Created}other{Updated}} on {date} by {email} ({role}) with status {status}"
+        "targetMessage": "{index, plural, =0{Criada}other{Atualizada}} em {date} por {email} ({role}) com o status {status}"
       },
       {
         "srcLang": "en-DV",
@@ -438,7 +438,7 @@
         "srcLang": "en-DV",
         "context": "vtex.b2b-quotes@0.x",
         "srcMessage": "store/b2b-quotes.quote-details.expiration-date-change.title",
-        "targetMessage": "Alteração da data de expiração"
+        "targetMessage": "Alteração da data de validade"
       },
 
       {
@@ -488,6 +488,12 @@
         "srcMessage": "store/product-comparison.product-selector.upper-limit-exceeded",
         "context": "vtex.product-comparison@0.x",
         "targetMessage": "Não é possível adicionar este item para comparar; limite de itens excedido"
+      },
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/b2b-organizations.user-widget.organization",
+        "context": "vtex.b2b-organizations@1.x",
+        "targetMessage": "Comprando para:"
       }
     ]
   }

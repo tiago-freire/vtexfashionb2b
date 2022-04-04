@@ -21,7 +21,7 @@
   },
   "rich-text#quickOrderTitlePageMobile":{
     "props": {
-      "text": "# Quick Order",
+      "text": "# Pedido Rápido",
       "blockClass": "quickOrderTitlePageMobile"
     }
   },

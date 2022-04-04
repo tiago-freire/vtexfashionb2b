@@ -2,6 +2,7 @@
   background-color: var(--fresh-blue);
   color: var(--base);
   border-radius: 6px;
+  margin-right: 15px;
 }
 
 @media (min-width: 768px) {

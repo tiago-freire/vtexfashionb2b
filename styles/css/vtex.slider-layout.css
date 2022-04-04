@@ -146,6 +146,13 @@
   width: 12px;
 }
 
+.sliderLayoutContainer--stripeSlider {
+  padding-bottom: 0 !important;
+  background: var(--b2b-blue-darkest);
+  margin-top: 16px;
+  height: 40px;
+}
+
 /* END - Trending Shelf */
 
 @media (max-width: 64rem) {
@@ -176,13 +183,6 @@
 
   .sliderTrack--shelfPopular .slide {
     width: 100% !important;
-  }
-
-  .sliderLayoutContainer--stripeSlider {
-    padding-bottom: 0 !important;
-    background: #1b3255;
-    margin-top: 16px;
-    height: 40px;
   }
 
   .slide--shelfStyle1 {

@@ -71,7 +71,6 @@
   "flex-layout.col#search-bar": {
     "children": ["search-bar"],
     "props": {
-      "paddingLeft": 8,
       "width": "grow"
     }
   },
@@ -87,6 +86,7 @@
     "children": [
       "shopper-location",
       "b2b-user-widget",
+      "flex-layout.col#spacer",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
@@ -149,14 +149,14 @@
   },
 
   "header-layout.mobile": {
-    "children": [
-      "flex-layout.row#demo-store-warning",
-      "sticky-layout#mobile"
-    ]
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#mobile"]
   },
 
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobileHeader", "slider-layout#menuLinks"],
+    "children": [
+      "flex-layout.row#mobileHeader",
+      "slider-layout#menuLinks"
+    ],
     "props": {
       "blockClass": "headerMobile"
     }
@@ -184,7 +184,8 @@
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
-      "rich-text#headStripe5"
+      "rich-text#headStripe5",
+      "check-permission#reseller"
     ]
   },
 
@@ -196,7 +197,14 @@
   },
 
   "flex-layout.row#mobile": {
-    "children": [/* "drawer" */"category-menu", "logo", /* "check-permission#login", */ "login", "minicart.v2"],
+    "children": [
+      /* "drawer" */ "category-menu",
+      // "flex-layout.col#spacer",
+      "logo",
+      "flex-layout.col#spacer",
+      /* "check-permission#login", */ "login",
+      "minicart.v2"
+    ],
     "props": {
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
@@ -228,19 +236,24 @@
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
-      "fullWidth": true
+      "fullWidth": true,
+      "colGap": 4
     }
   },
 
   "flex-layout.col#mobileSearch": {
-    "children": ["search-bar#mobile"]/* ,
+    "children": ["search-bar#mobile"],
     "props": {
-      "blockClass": "searchBarMobile"
-    } */
+      "blockClass": "searchBarMobile",
+      "width": "grow"
+    }
   },
 
   "flex-layout.col#quickOrder": {
-    "children": ["link#quickOrder"]
+    "children": ["link#quickOrder"],
+    "props": {
+      "verticalAlign": "middle"
+    }
   },
 
   "search-bar#mobile": {
