@@ -1,0 +1,26 @@
+.trigger {
+    height: 100%;
+}
+
+.container {
+  background-color: var(--b2b-blue-darkest);
+  border-color: var(--b2b-blue-darkest);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-top: 0;
+  border: none;
+}
+
+.container :global(.vtex-store-link-0-x-link) {
+  color: var(--base);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 64rem) {
+  .container {
+    background-color: var(--serious-black);
+    border-color: var(--serious-black);
+  }
+}

@@ -46,12 +46,15 @@
     "props": {
       "blockClass": "footer-row-1",
       // "width": "100%",
-      "colSizing": "equals"
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#footer-policy",
+      "flex-layout.col#spacer",
       "flex-layout.col#footer-institutional",
+      "flex-layout.col#spacer",
       "flex-layout.col#footer-help",
+      "flex-layout.col#spacer",
       "flex-layout.col#social-media"
       // "flex-layout.col#footer-2-desktop",
       // "flex-layout.col#footer-3-desktop",
@@ -103,8 +106,8 @@
     "props": {
       "blockClass": "social-media-links",
       "colSizing": "auto",
-      "rowGap": 6,
-      "colGap": 6
+      "colGap": 6,
+      "preserveLayoutOnMobile": true
     },
     "children": ["flex-layout.col#facebook", "flex-layout.col#instagram"]
   },

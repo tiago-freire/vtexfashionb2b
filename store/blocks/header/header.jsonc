@@ -85,16 +85,64 @@
     },
     "children": [
       "shopper-location",
-      "b2b-user-widget",
+      "check-permission#reseller-overlay-trigger",
       "flex-layout.col#spacer",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
       "rich-text#headStripe5",
-      "flex-layout.col#spacer",
-      "check-permission#reseller"
+      "flex-layout.col#spacer"
     ]
+  },
+
+  "overlay-trigger#b2b-user-widget": {
+    "children": ["b2b-user-widget", "overlay-layout#b2b-user-widget"]
+  },
+  "overlay-layout#b2b-user-widget": {
+    "props": {
+      "placement": "bottom"/* ,
+      "showArrow": true *//* ,
+      "scrollBehavior": "close-on-scroll",
+      "backdrop": "visible" */
+    },
+    "children": ["flex-layout.row#b2b-user-widget"]
+  },
+  "flex-layout.row#b2b-user-widget": {
+    "children": ["flex-layout.col#b2b-user-widget"]
+  },
+  "flex-layout.col#b2b-user-widget": {
+    "children": ["link#b2b-user-widget-link-1", "link#b2b-user-widget-link-2"]
+  },
+  "link#b2b-user-widget-link-1": {
+    "props": {
+      "label": "Gerenciar organização",
+      "href": "/account#/organization"
+    }
+  },
+  "link#b2b-user-widget-link-2": {
+    "props": {
+      "label": "Minhas cotações",
+      "href": "/b2b-quotes"
+    }
+  },
+  "rich-text#b2b-user-widget-link-1": {
+    "props": {
+      "text": "Gerenciar organização",
+      "textPosition": "CENTER",
+      "link": {
+        "url": "/account#/organization"
+      }
+    }
+  },
+  "rich-text#b2b-user-widget-link-2": {
+    "props": {
+      "text": "Minhas cotações",
+      "textPosition": "CENTER",
+      "link": {
+        "url": "/b2b-quotes"
+      }
+    }
   },
 
   "rich-text#headStripe1": {
@@ -179,13 +227,14 @@
       "fullWidth": true
     },
     "children": [
-      "b2b-user-widget",
+      "check-permission#reseller-b2b-user-widget",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
       "rich-text#headStripe5",
-      "check-permission#reseller"
+      "check-permission#reseller",
+      "check-permission#orderQuote"
     ]
   },
 
@@ -217,6 +266,14 @@
     "props": {
       "label": "Minhas cotações",
       "href": "/b2b-quotes",
+      "blockClass": "orderQuote"
+    }
+  },
+
+  "link#organization": {
+    "props": {
+      "label": "Gerenciar organização",
+      "href": "/account#/organization",
       "blockClass": "orderQuote"
     }
   },

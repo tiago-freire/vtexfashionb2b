@@ -12,11 +12,84 @@
       ]
     },
     "blocks": [
-      "allowed-content#reseller",
-      "disallowed-content#reseller"
+      "allowed-content#reseller"
     ]
   },
   "allowed-content#reseller": {
+    "children": [
+      "link#organization"
+    ],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "check-permission#reseller-overlay-trigger": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-overlay-trigger",
+      "disallowed-content#reseller"
+    ]
+  },
+  "allowed-content#reseller-overlay-trigger": {
+    "children": [
+      "overlay-trigger#b2b-user-widget"
+    ],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "check-permission#reseller-b2b-user-widget": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-b2b-user-widget",
+      "disallowed-content#reseller"
+    ]
+  },
+  "allowed-content#reseller-b2b-user-widget": {
+    "children": [
+      "b2b-user-widget"
+    ],
+    "props": {
+      "blockClass": "resellerChallengeContent"
+    }
+  },
+  "check-permission#orderQuote": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#orderQuote"
+    ]
+  },
+  "allowed-content#orderQuote": {
     "children": [
       "link#orderQuote"
     ],
