@@ -101,6 +101,7 @@
   },
   "overlay-layout#b2b-user-widget": {
     "props": {
+      "blockClass": "b2b-user-widget",
       "placement": "bottom"/* ,
       "showArrow": true *//* ,
       "scrollBehavior": "close-on-scroll",
@@ -109,7 +110,12 @@
     "children": ["flex-layout.row#b2b-user-widget"]
   },
   "flex-layout.row#b2b-user-widget": {
-    "children": ["flex-layout.col#b2b-user-widget"]
+    "children": ["flex-layout.col#b2b-user-widget"],
+    "props": {
+      // "paddingBottom": 3,
+      // "paddingTop": 3,
+      // "rowGap": 5
+    }
   },
   "flex-layout.col#b2b-user-widget": {
     "children": ["link#b2b-user-widget-link-1", "link#b2b-user-widget-link-2"]
@@ -203,7 +209,8 @@
   "sticky-layout#mobile": {
     "children": [
       "flex-layout.row#mobileHeader",
-      "slider-layout#menuLinks"
+      "check-permission#menuLinks"
+      // "slider-layout#menuLinks"
     ],
     "props": {
       "blockClass": "headerMobile"
@@ -214,16 +221,45 @@
     "children": ["flex-layout.col#mobileHeader"]
   },
 
-  "slider-layout#menuLinks": {
+  "slider-layout#menuLinksLogged": {
     "props": {
       "itemsPerPage": {
-        "phone": 2
+        "phone": 2,
+        "tablet": 4
       },
       "centerMode": "to-the-left",
       "infinite": false,
-      "showNavigationArrows": "never",
+      "showNavigationArrows": "always",
       "showPaginationDots": "never",
       "blockClass": "stripeSlider",
+      "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      "check-permission#reseller-b2b-user-widget",
+      // "check-permission#reseller-overlay-trigger",
+      "check-permission#reseller",
+      "check-permission#orderQuote",
+      "rich-text#headStripe1",
+      "rich-text#headStripe2",
+      "rich-text#headStripe3",
+      "rich-text#headStripe4",
+      "rich-text#headStripe5"
+    ]
+  },
+
+  "slider-layout#menuLinksNotLogged": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 2,
+        "tablet": 4
+      },
+      "centerMode": "to-the-left",
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "stripeSlider",
+      "navigationStep": 1,
       "fullWidth": true
     },
     "children": [
@@ -232,9 +268,7 @@
       "rich-text#headStripe2",
       "rich-text#headStripe3",
       "rich-text#headStripe4",
-      "rich-text#headStripe5",
-      "check-permission#reseller",
-      "check-permission#orderQuote"
+      "rich-text#headStripe5"
     ]
   },
 

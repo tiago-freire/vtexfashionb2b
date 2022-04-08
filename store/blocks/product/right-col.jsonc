@@ -4,6 +4,7 @@
       "flex-layout.row#brand-and-rating",
       "flex-layout.row#product-name",
       "flex-layout.row#product-identifier",
+      // "sku-selector#desktop",
       "check-permission#sku-list",
       // "flex-layout.row#sku-list",
       // "condition-layout.product#sku-selector-or-list",

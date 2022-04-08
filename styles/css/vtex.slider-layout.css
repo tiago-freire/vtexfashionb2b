@@ -70,7 +70,7 @@
   height: 30px;
   color: var(--fresh-blue);
   border: var(--fresh-blue) solid 1px;
-  background-color: #fff!important;
+  background-color: #fff !important;
 }
 
 .sliderArrows:local([disabled]) {
@@ -82,7 +82,20 @@
 .sliderArrows:hover,
 .sliderArrows:focus,
 .sliderArrows:local([disabled]) {
+  opacity: 1;
   background-color: var(--lines-light) !important;
+}
+
+.sliderArrows--shelfTrending {
+  top: 30%;
+}
+.sliderArrows--stripeSlider {
+  opacity: 0.75;
+  color: var(--serious-black);
+  border-color: var(--serious-black);
+}
+.sliderArrows--stripeSlider:local([disabled]) {
+  display: none;
 }
 /* .sliderArrows--shelfAlsoView,
 .sliderArrows--categorySlider,
@@ -148,10 +161,14 @@
 
 .sliderLayoutContainer--stripeSlider {
   padding-bottom: 0 !important;
-  background: var(--b2b-blue-darkest);
+  background: var(--serious-black);
   margin-top: 16px;
-  height: 40px;
+  height: 50px;
 }
+
+/* .sliderTrackContainer--stripeSlider {
+  overflow: unset;
+} */
 
 /* END - Trending Shelf */
 

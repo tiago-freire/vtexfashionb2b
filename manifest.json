@@ -82,7 +82,8 @@
     "vtex.store-newsletter": "1.x",
     "vtex.b2b-organizations": "1.x",
     "vtex.category-menu": "2.x",
-    "vtex.overlay-layout": "0.x"
+    "vtex.overlay-layout": "0.x",
+    "ssesandbox04.add-all-to-cart-button": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

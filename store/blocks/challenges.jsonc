@@ -11,14 +11,10 @@
         "customer-buyer"
       ]
     },
-    "blocks": [
-      "allowed-content#reseller"
-    ]
+    "blocks": ["allowed-content#reseller"]
   },
   "allowed-content#reseller": {
-    "children": [
-      "link#organization"
-    ],
+    "children": ["link#organization"],
     "props": {
       "blockClass": "resellerChallengeContent"
     }
@@ -41,9 +37,7 @@
     ]
   },
   "allowed-content#reseller-overlay-trigger": {
-    "children": [
-      "overlay-trigger#b2b-user-widget"
-    ],
+    "children": ["overlay-trigger#b2b-user-widget"],
     "props": {
       "blockClass": "resellerChallengeContent"
     }
@@ -66,9 +60,7 @@
     ]
   },
   "allowed-content#reseller-b2b-user-widget": {
-    "children": [
-      "b2b-user-widget"
-    ],
+    "children": ["b2b-user-widget"],
     "props": {
       "blockClass": "resellerChallengeContent"
     }
@@ -85,22 +77,16 @@
         "customer-buyer"
       ]
     },
-    "blocks": [
-      "allowed-content#orderQuote"
-    ]
+    "blocks": ["allowed-content#orderQuote"]
   },
   "allowed-content#orderQuote": {
-    "children": [
-      "link#orderQuote"
-    ],
+    "children": ["link#orderQuote"],
     "props": {
       "blockClass": "resellerChallengeContent"
     }
   },
   "disallowed-content#reseller": {
-    "children": [
-      "link#reseller"
-    ],
+    "children": ["link#reseller"],
     "props": {
       "blockClass": "resellerChallengeFallback"
     }
@@ -117,25 +103,42 @@
         "customer-buyer"
       ]
     },
-    "blocks": [
-      "allowed-content#reseller",
-      "disallowed-content#reseller"
-    ]
+    "blocks": ["allowed-content#reseller", "disallowed-content#reseller"]
   },
   "allowed-content#login": {
-    "children": [
-      "link#profile"
-    ],
+    "children": ["link#profile"],
     "props": {
       "blockClass": "loginChallengeContent"
     }
   },
   "disallowed-content#login": {
-    "children": [
-      "login#mobile"
-    ],
+    "children": ["login#mobile"],
     "props": {
       "blockClass": "loginChallengeFallback"
     }
+  },
+
+  "check-permission#menuLinks": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#menuLinksLogged",
+      "disallowed-content#menuLinksNotLogged"
+    ]
+  },
+  "allowed-content#menuLinksLogged": {
+    "children": ["slider-layout#menuLinksLogged"]
+  },
+  "disallowed-content#menuLinksNotLogged": {
+    "children": ["slider-layout#menuLinksNotLogged"]
   }
 }

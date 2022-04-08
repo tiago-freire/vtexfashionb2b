@@ -30,7 +30,7 @@
 }
 
 .skuContentWrapper :global(.vtex-button) {
-  width: 80%;
+  /* width: 80%;
   margin-left: 10%;
   font-size: 0.8rem;
 }
@@ -41,7 +41,17 @@
 }
 
 .buttonText {
-  text-transform: none;
+  text-transform: none; */
+  display: none;
+}
+
+.quantitySelectorTitle {
+  text-align: center;
+}
+
+.quantitySelectorStepper {
+  width: 100px;
+  margin: 0 auto;
 }
 
 .quantitySelectorContainer {

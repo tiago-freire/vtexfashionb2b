@@ -45,8 +45,8 @@
 
   "add-to-cart-button#buy-now": {
     "props": {
+      "onClickBehavior": "go-to-product-page",
       "blockClass": "buy-now",
-      "isOneClickBuy": true,
       "text": "Comprar"
     }
   }

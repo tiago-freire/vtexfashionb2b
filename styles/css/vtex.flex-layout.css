@@ -14,7 +14,8 @@
 }
 
 @media (min-width: 64rem) {
-  .flexRowContent--header :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  .flexRowContent--header
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
     padding-right: 0;
   }
 }
@@ -519,6 +520,10 @@
   height: 64px;
   margin-right: 16px;
   min-width: 64px;
+}
+
+.flexRowContent--skuListHeader {
+  padding: 0 1rem;
 }
 
 .flexRow--add-to-cart :global(.vtex-button) {
