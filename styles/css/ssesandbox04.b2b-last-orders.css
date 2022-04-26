@@ -1,0 +1,8 @@
+.orderDetails,
+.arrow {
+  color: var(--fresh-blue);
+}
+
+.popperArrow .container {
+  border-color: var(--fresh-blue);
+}

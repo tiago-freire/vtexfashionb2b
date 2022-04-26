@@ -89,15 +89,23 @@
 /* END - Header */
 /* BEGIN - Generic */
 
-/* .headingLevel3--sectionTitle,
 .headingLevel3--shopByCategoryTitle {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 16px;
-} */
+  display: flex;
+  align-items: center;
+}
+.link--shopByCategoryTitle {
+  color: var(--fresh-blue);
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.link--shopByCategoryTitle:hover,
+.link--shopByCategoryTitle:focus,
+.link--shopByCategoryTitle:active {
+  text-decoration: underline;
+}
 
 .wrapper--alsoView,
 .wrapper--sectionTitle {

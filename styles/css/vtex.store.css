@@ -1,9 +1,4 @@
-:global(.vtex-store__template),
-:global(.vtex-modal-layout-0-x-container),
-:global(.vtex-minicart-2-x-drawer),
-:global(.vtex-telemarketing-2-x-portalContainer),
-:global(.vtex-login-2-x-portalContainer),
-:global(.vtex-store-drawer-0-x-childrenContainer) {
+:local(:root) {
   --black-dark: #000000;
   --fresh-blue: #007f7f;
   --fresh-blue-dark: #0067c7;
@@ -11,7 +6,7 @@
   --fresh-orange: #ff5f00;
   --fresh-darkest: #003364;
   --green-dark: #468a2e;
-  --black-medium: #4A596B;
+  --black-medium: #4a596b;
   --b2b-header-blue-medium: #fff;
   --blue-medium: #597298;
   --b2b-blue-darkest: #1b3255;

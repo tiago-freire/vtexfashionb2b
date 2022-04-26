@@ -119,9 +119,10 @@
 /* BEGIN - ShopByCategory */
 
 .flexRowContent--shopByCategory {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
 
 .flexRow--shopByCategorySection {
@@ -129,17 +130,10 @@
 }
 
 .flexRowContent--shopByCategory .stretchChildrenWidth {
-  width: 100%;
+  width: 216px !important;
 }
 
 @media (max-width: 64rem) {
-  .flexRowContent--shopByCategory {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-  }
-
   .flexRowContent--shopByBrandHead {
     display: flex;
     align-items: center;

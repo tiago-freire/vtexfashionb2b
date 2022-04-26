@@ -6,7 +6,7 @@
   },
   "rich-text#notAllowed": {
     "props": {
-      "text": "## Sorry! You're not allowed to access the site.",
+      "text": "## Desculpe, mas você não possui as permissões necessárias para acessar esta loja.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }

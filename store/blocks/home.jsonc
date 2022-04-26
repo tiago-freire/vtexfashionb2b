@@ -5,18 +5,21 @@
   "responsive-layout.desktop": {
     "children": [
       "flex-layout.row#imageList",
-      // "flex-layout.row#my-orders",
+      "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
+      "__fold__",
       // Deprecated
       // "flex-layout.row#shopByBrand",
       "flex-layout.row#bannerReleases",
       "flex-layout.row#trending",
       // "flex-layout.row#shelf1",
       "flex-layout.row#popular",
+      "__fold__",
       "flex-layout.row#recommendations",
       "flex-layout.row#bannerCoupon",
       "flex-layout.row#imageBanners",
       // "flex-layout.row#benefits",
+      "__fold__",
       "flex-layout.row#newsletter"
     ]
   },
@@ -87,7 +90,7 @@
     "props": {
       "blockClass": "shopByCategory",
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      // "verticalAlign": "center",
       "colSizing": "auto",
       // "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -102,45 +105,83 @@
       "link#shoBy6"
     ]
   },
-  /**/
-  "flex-layout.row#my-orders": {
+  /* Seus Últimos Pedidos */
+  "flex-layout.row#last-orders": {
     "props": {
       "blockClass": "shopByCategorySection"
     },
-    "children": ["flex-layout.col#my-orders"]
+    "children": ["flex-layout.col#last-orders"]
   },
-  "flex-layout.col#my-orders": {
+  "flex-layout.col#last-orders": {
     "props": {
       "blockClass": "shopByCategory"
     },
-    "children": ["rich-text#my-orders-title"/* , "flex-layout.row#my-orders-cards" */]
+    "children": [
+      "rich-text#last-orders-title",
+      "responsive-layout.desktop#b2b-last-orders",
+      "responsive-layout.mobile#b2b-last-orders"
+      // "flex-layout.row#last-orders-cards"
+    ]
   },
-  "rich-text#my-orders-title": {
+  "rich-text#last-orders-title": {
     "props": {
-      "text": "### Seus Últimos Pedidos",
+      "text": "### Seus Últimos Pedidos [VER TODOS](/account#/orders-history)",
       "textPosition": "CENTER",
       "blockClass": "shopByCategoryTitle"
     }
   },
-  "flex-layout.row#my-orders-cards": {
+  // "flex-layout.row#last-orders-cards": {
+  //   "props": {
+  //     "horizontalAlign": "center",
+  //     "verticalAlign": "center",
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true
+  //   },
+  //   "children": ["b2b-last-orders"]
+  // },
+
+  "responsive-layout.desktop#b2b-last-orders": {
+    "children": ["flex-layout.row#last-orders-cards-desktop"]
+  },
+
+  "responsive-layout.mobile#b2b-last-orders": {
+    "children": ["flex-layout.row#last-orders-cards-mobile"]
+  },
+
+  "flex-layout.row#last-orders-cards-desktop": {
     "props": {
-      "blockClass": "shopByCategory",
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "colSizing": "auto",
-      // "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "link#shoBy1",
-      "link#shoBy2",
-      "link#shoBy3",
-      "link#shoBy4",
-      "link#shoBy5",
-      "link#shoBy6"
-    ]
+    "children": ["b2b-last-orders#desktop"]
   },
+
+  "flex-layout.row#last-orders-cards-mobile": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["b2b-last-orders#mobile"]
+  },
+
+  "b2b-last-orders#desktop": {
+    "props": {
+      "limit": 6,
+      "orderDetailsPlacement": "right"
+    }
+  },
+
+  "b2b-last-orders#mobile": {
+    "props": {
+      "limit": 4,
+      "orderDetailsPlacement": "top"
+    }
+  },
+
   /**/
   "link#shoBy1": {
     "children": ["image#shoBy1", "rich-text#cat1"],
@@ -394,7 +435,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#banner-1"/* ,
+      "image#banner-1" /* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
       "rich-text#bannerLink" */
@@ -405,7 +446,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#banner-2"/* ,
+      "image#banner-2" /* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
       "rich-text#bannerLink" */
@@ -416,7 +457,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#banner-3"/* ,
+      "image#banner-3" /* ,
       "rich-text#bannerTitle",
       "rich-text#bannerDesc",
       "rich-text#bannerLink" */
