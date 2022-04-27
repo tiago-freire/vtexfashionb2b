@@ -18,7 +18,6 @@
     "vtex.quickorder": "3.x",
     "vtex.location-availability": "0.x",
     "vtex.shopper-location": "0.x",
-    "vtex.storefront-permissions-ui": "0.x",
     "vtex.wordpress-integration": "2.x"
   },
   "dependencies": {
@@ -82,6 +81,7 @@
     "vtex.b2b-organizations": "1.x",
     "vtex.category-menu": "2.x",
     "vtex.overlay-layout": "0.x",
+    "vtex.storefront-permissions-ui": "1.x",
     "ssesandbox04.my-sku-list": "0.x",
     "ssesandbox04.b2b-last-orders": "0.x"
   },

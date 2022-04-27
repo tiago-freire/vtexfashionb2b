@@ -152,7 +152,28 @@
     "children": ["slider-layout#menuLinksNotLogged"]
   },
 
-  /* Disposição dos links do menu mobile de acordo com as permissões */
+  /* Seção na home de área do representante da organização */
+  "check-permission#representative-area": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#representative-area"
+    ]
+  },
+  "allowed-content#representative-area": {
+    "children": ["flex-layout.row#representative-area"]
+  },
+
+  /* Seção na home de últimos pedidos da organização */
   "check-permission#lastOrders": {
     "props": {
       "roles": [

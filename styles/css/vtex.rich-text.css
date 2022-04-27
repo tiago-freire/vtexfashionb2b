@@ -107,6 +107,11 @@
   text-decoration: underline;
 }
 
+.headingLevel4--representative-area-title {
+  font-size: 22px;
+  margin: 0;
+}
+
 .wrapper--alsoView,
 .wrapper--sectionTitle {
   width: 100%;

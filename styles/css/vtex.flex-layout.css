@@ -1,6 +1,6 @@
 /* BEGIN - Header */
 .flexRow--demo-store-warning {
-  background-color: #f8f7fc;
+  background-color: var(--near-white);
 }
 
 .flexRow--header {
@@ -125,6 +125,13 @@
   justify-content: center;
 }
 
+.flexColChild--representative-area {
+  margin: 1rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: var(--lines-dark) solid 2px;
+}
+
+.flexRow--last-orders,
 .flexRow--shopByCategorySection {
   padding-bottom: 40px;
 }
@@ -194,10 +201,15 @@
 
 /* END - Footer */
 /* BEGIN - Trending Shelf */
-
-.flexRow--full-banner {
-  padding-bottom: 40px;
+.flexRow--representative-area,
+.flexRow--full-banner,
+.flexRow--last-orders {
+  background-color: var(--near-white);
 }
+
+/* .flexRow--full-banner {
+  padding-bottom: 40px;
+} */
 
 .flexRowContent--trendingHead {
   align-items: center;

@@ -4,6 +4,7 @@
   },
   "responsive-layout.desktop": {
     "children": [
+      // "check-permission#representative-area",
       "flex-layout.row#imageList",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
@@ -108,7 +109,7 @@
   /* Seus Últimos Pedidos */
   "flex-layout.row#last-orders": {
     "props": {
-      "blockClass": "shopByCategorySection"
+      "blockClass": "last-orders"
     },
     "children": ["flex-layout.col#last-orders"]
   },
@@ -170,15 +171,38 @@
 
   "b2b-last-orders#desktop": {
     "props": {
-      "limit": 6,
+      "limit": 5,
       "orderDetailsPlacement": "right"
     }
   },
 
   "b2b-last-orders#mobile": {
     "props": {
-      "limit": 4,
+      "limit": 3,
       "orderDetailsPlacement": "top"
+    }
+  },
+
+  "flex-layout.row#representative-area": {
+    "props": {
+      "blockClass": "representative-area"
+    },
+    "children": ["flex-layout.col#representative-area"]
+  },
+
+  "flex-layout.col#representative-area": {
+    "props": {
+      "blockClass": "representative-area"
+    },
+    "children": [
+      "rich-text#representative-area-title"
+    ]
+  },
+
+  "rich-text#representative-area-title": {
+    "props": {
+      "text": "#### Área do representante: **Fernanda Lima Barbosa**",
+      "blockClass": "representative-area-title"
     }
   },
 

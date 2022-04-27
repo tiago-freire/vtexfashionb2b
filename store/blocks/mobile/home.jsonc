@@ -1,6 +1,7 @@
 {
   "responsive-layout.mobile": {
     "children": [
+      // "check-permission#representative-area",
       "flex-layout.row#imageList--mobile",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
