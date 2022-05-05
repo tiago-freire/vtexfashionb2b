@@ -1,7 +1,12 @@
 {
   "responsive-layout.mobile": {
+    "children": ["b2b-context#mobile"]
+  },
+
+  "b2b-context#mobile": {
     "children": [
-      // "check-permission#representative-area",
+      // "flex-layout.row#permission-description",
+      "check-permission#representative-area",
       "flex-layout.row#imageList--mobile",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",

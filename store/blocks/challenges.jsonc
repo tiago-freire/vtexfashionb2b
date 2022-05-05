@@ -156,18 +156,16 @@
   "check-permission#representative-area": {
     "props": {
       "roles": [
-        "store-admin",
+        // "store-admin",
         "sales-admin",
         "sales-manager",
-        "sales-representative",
-        "customer-admin",
-        "customer-approver",
-        "customer-buyer"
+        "sales-representative" //,
+        // "customer-admin",
+        // "customer-approver",
+        // "customer-buyer"
       ]
     },
-    "blocks": [
-      "allowed-content#representative-area"
-    ]
+    "blocks": ["allowed-content#representative-area"]
   },
   "allowed-content#representative-area": {
     "children": ["flex-layout.row#representative-area"]
@@ -182,15 +180,126 @@
         "sales-manager",
         "sales-representative",
         "customer-admin",
-        "customer-approver",
-        "customer-buyer"
+        "customer-approver"/* ,
+        "customer-buyer" */
       ]
     },
-    "blocks": [
-      "allowed-content#lastOrders"
-    ]
+    "blocks": ["allowed-content#lastOrders"]
   },
   "allowed-content#lastOrders": {
     "children": ["flex-layout.row#last-orders"]
+  },
+
+  /* Verificando cada papel para exibir sua descrição */
+  "check-permission#store-admin": {
+    "props": {
+      "roles": ["store-admin"]
+    },
+    "blocks": ["allowed-content#store-admin"]
+  },
+  "allowed-content#store-admin": {
+    "children": ["rich-text#store-admin"]
+  },
+  "rich-text#store-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador da Loja**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-admin": {
+    "props": {
+      "roles": ["sales-admin"]
+    },
+    "blocks": ["allowed-content#sales-admin"]
+  },
+  "allowed-content#sales-admin": {
+    "children": ["rich-text#sales-admin"]
+  },
+  "rich-text#sales-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-manager": {
+    "props": {
+      "roles": ["sales-manager"]
+    },
+    "blocks": ["allowed-content#sales-manager"]
+  },
+  "allowed-content#sales-manager": {
+    "children": ["rich-text#sales-manager"]
+  },
+  "rich-text#sales-manager": {
+    "props": {
+      "text": "Minha função:<br>**Gerente de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#sales-representative": {
+    "props": {
+      "roles": ["sales-representative"]
+    },
+    "blocks": ["allowed-content#sales-representative"]
+  },
+  "allowed-content#sales-representative": {
+    "children": ["rich-text#sales-representative"]
+  },
+  "rich-text#sales-representative": {
+    "props": {
+      "text": "Minha função:<br>**Representante de Vendas**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-admin": {
+    "props": {
+      "roles": ["customer-admin"]
+    },
+    "blocks": ["allowed-content#customer-admin"]
+  },
+  "allowed-content#customer-admin": {
+    "children": ["rich-text#customer-admin"]
+  },
+  "rich-text#customer-admin": {
+    "props": {
+      "text": "Minha função:<br>**Administrador da Organização**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-approver": {
+    "props": {
+      "roles": ["customer-approver"]
+    },
+    "blocks": ["allowed-content#customer-approver"]
+  },
+  "allowed-content#customer-approver": {
+    "children": ["rich-text#customer-approver"]
+  },
+  "rich-text#customer-approver": {
+    "props": {
+      "text": "Minha função:<br>**Aprovador da Organização**",
+      "blockClass": "permission-description"
+    }
+  },
+
+  "check-permission#customer-buyer": {
+    "props": {
+      "roles": ["customer-buyer"]
+    },
+    "blocks": ["allowed-content#customer-buyer"]
+  },
+  "allowed-content#customer-buyer": {
+    "children": ["rich-text#customer-buyer"]
+  },
+  "rich-text#customer-buyer": {
+    "props": {
+      "text": "Minha função:<br>**Comprador da Organização**",
+      "blockClass": "permission-description"
+    }
   }
 }

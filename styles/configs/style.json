@@ -127,12 +127,12 @@
       "muted-5": "#f2f4f5"
     },
     "visited-text": {
-      "link": "#0c389f"
+      "link": "#142032"
     },
     "hover-text": {
       "action-primary": "#142032",
       "action-secondary": "#dbe9fd",
-      "link": "#0c389f",
+      "link": "#142032",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",
@@ -142,7 +142,7 @@
       "warning--faded": "#fff6e0"
     },
     "active-text": {
-      "link": "#0c389f",
+      "link": "#142032",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",

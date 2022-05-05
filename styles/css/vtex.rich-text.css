@@ -86,6 +86,20 @@
   height: 25px;
 }
 
+.wrapper--permission-description {
+  width: 100%;
+}
+
+.paragraph--permission-description {
+  width: 260px;
+  line-height: 1;
+  padding: 8px 20px;
+  margin: 0;
+  cursor: default;
+  color: var(--base);
+  background-color: var(--black-medium);
+}
+
 /* END - Header */
 /* BEGIN - Generic */
 

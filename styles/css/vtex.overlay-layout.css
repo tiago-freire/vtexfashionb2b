@@ -3,7 +3,13 @@
 }
 
 .popper--b2b-user-widget {
-  left: 30px !important;
+  left: 32px !important;
+}
+
+@media (min-width: 1505px) {
+  .popper--b2b-user-widget {
+    left: 64px !important;
+  }
 }
 
 .container--b2b-user-widget {
@@ -18,12 +24,21 @@
 }
 
 .container--b2b-user-widget
-  :global(.vtex-flex-layout-0-x-flexRow)
-  :global(.vtex-flex-layout-0-x-flexRowContent)
+  :global(.vtex-flex-layout-0-x-flexRow--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexRowContent--b2b-user-widget)
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
-  :global(.vtex-flex-layout-0-x-flexCol)
-  :global(.vtex-flex-layout-0-x-flexColChild):first-child {
+  :global(.vtex-flex-layout-0-x-flexCol--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexColChild--b2b-user-widget) {
   border-bottom: var(--b2b-blue-darkest) solid 2px;
+}
+
+.container--b2b-user-widget
+  :global(.vtex-flex-layout-0-x-flexRow--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexRowContent--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+  :global(.vtex-flex-layout-0-x-flexCol--b2b-user-widget)
+  :global(.vtex-flex-layout-0-x-flexColChild--b2b-user-widget):last-child {
+  border-bottom: none;
 }
 
 .container--b2b-user-widget :global(.vtex-store-link-0-x-link) {

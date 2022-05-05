@@ -1,3 +1,4 @@
+/* b2b-last-orders */
 .orderDetails,
 .arrow {
   color: var(--fresh-blue);
@@ -5,4 +6,9 @@
 
 .popperArrow .container {
   border-color: var(--fresh-blue);
+}
+
+/* b2b-representative-area */
+.data {
+  color: var(--black-medium);
 }

@@ -127,8 +127,6 @@
 
 .flexColChild--representative-area {
   margin: 1rem 0 0.75rem;
-  padding-bottom: 0.25rem;
-  border-bottom: var(--lines-dark) solid 2px;
 }
 
 .flexRow--last-orders,
@@ -540,9 +538,6 @@
 }
 
 .flexRow--buy-now :global(.vtex-button) {
-  background: var(--serious-blue-dark);
-  border-color: var(--serious-blue-dark);
-  color: #fff;
   height: 52px;
 }
 

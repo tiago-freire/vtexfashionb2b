@@ -65,9 +65,26 @@
       "flex-layout.col#search-bar",
       "link#quickOrder",
       "login",
+      // "flex-layout.col#permission-description",
       "minicart.v2"
     ]
   },
+
+  "flex-layout.col#permission-description": {
+    "props": {
+      "blockClass": "permission-description"
+    },
+    "children": [
+      "check-permission#store-admin",
+      "check-permission#sales-admin",
+      "check-permission#sales-manager",
+      "check-permission#sales-representative",
+      "check-permission#customer-admin",
+      "check-permission#customer-approver",
+      "check-permission#customer-buyer"
+    ]
+  },
+
   "flex-layout.col#search-bar": {
     "children": ["search-bar"],
     "props": {
@@ -102,8 +119,8 @@
   "overlay-layout#b2b-user-widget": {
     "props": {
       "blockClass": "b2b-user-widget",
-      "placement": "bottom"/* ,
-      "showArrow": true *//* ,
+      "placement": "bottom" /* ,
+      "showArrow": true */ /* ,
       "scrollBehavior": "close-on-scroll",
       "backdrop": "visible" */
     },
@@ -112,13 +129,18 @@
   "flex-layout.row#b2b-user-widget": {
     "children": ["flex-layout.col#b2b-user-widget"],
     "props": {
-      // "paddingBottom": 3,
-      // "paddingTop": 3,
-      // "rowGap": 5
+      "blockClass": "b2b-user-widget"
     }
   },
   "flex-layout.col#b2b-user-widget": {
-    "children": ["link#b2b-user-widget-link-1", "link#b2b-user-widget-link-2"]
+    "children": [
+      "flex-layout.col#permission-description",
+      "link#b2b-user-widget-link-1",
+      "link#b2b-user-widget-link-2"
+    ],
+    "props": {
+      "blockClass": "b2b-user-widget"
+    }
   },
   "link#b2b-user-widget-link-1": {
     "props": {
