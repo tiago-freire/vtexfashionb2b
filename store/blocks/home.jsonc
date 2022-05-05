@@ -218,6 +218,15 @@
     "children": ["b2b-representative-area"]
   },
 
+  "b2b-representative-area": {
+    "props": {
+      "individualGoal": 0,
+      "reachedValue": 0,
+      "customersPortfolio": 0,
+      "customersOrdersMonth": 0
+    }
+  },
+
   /**/
   "link#shoBy1": {
     "children": ["image#shoBy1", "rich-text#cat1"],
