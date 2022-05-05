@@ -1,7 +1,7 @@
 {
   "vendor": "bravtexfashionb2b",
   "name": "b2bstore",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "defaultLocale": "pt-BR",
   "builders": {
     "assets": "0.x",
