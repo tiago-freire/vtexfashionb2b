@@ -119,6 +119,7 @@
 .link--shopByCategoryTitle:focus,
 .link--shopByCategoryTitle:active {
   text-decoration: underline;
+  color: var(--serious-black);
 }
 
 .headingLevel4--representative-area-title {
