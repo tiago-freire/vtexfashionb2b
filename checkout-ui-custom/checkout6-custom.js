@@ -166,6 +166,9 @@
     };
 
     $(window).on("checkoutRequestBegin.vtex", function (event, orderForm) {
+      if(document.querySelector("#clear-cart")) {
+        document.querySelector("#clear-cart").innerText = "Limpar Carrinho";
+      }
       fakeSubmitButton.setButtonAsLoading();
       setTimeout(function () {
         fakeSubmitButton.hideLoadingAndResetButton();
