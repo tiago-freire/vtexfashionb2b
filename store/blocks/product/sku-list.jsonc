@@ -119,7 +119,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
-    "children": ["sku-quantity-selector", "sku-buy-button"]
+    "children": ["sku-quantity-selector"]
   },
 
   // "flex-layout.col#sku-buy-button": {
@@ -170,7 +170,7 @@
       "width": "50%",
       "verticalAlign": "middle"
     },
-    "children": ["sku-quantity-selector", "sku-buy-button"]
+    "children": ["sku-quantity-selector"]
   },
 
   "sku-quantity-selector": {
