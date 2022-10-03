@@ -134,7 +134,8 @@
   },
   "flex-layout.col#b2b-user-widget": {
     "children": [
-      "flex-layout.col#permission-description",
+      "b2b-switch-organizations",
+      // "flex-layout.col#permission-description",
       "link#b2b-user-widget-link-1",
       "link#b2b-user-widget-link-2"
     ],

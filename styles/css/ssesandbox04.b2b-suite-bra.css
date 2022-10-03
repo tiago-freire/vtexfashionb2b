@@ -61,3 +61,21 @@
 .data {
   color: var(--black-medium);
 }
+
+/* b2b-switch-organizations */
+.containerSwitch {
+  width: 260px;
+  padding: 0.25rem;
+}
+
+.roleSwitch {
+  color: var(--base);
+  background-color: var(--black-medium);
+  border-bottom: var(--b2b-blue-darkest) solid 1px;
+  padding: 8px 20px;
+  cursor: default;
+}
+
+.roleSwitch:last-child {
+  border-bottom: none;
+}
