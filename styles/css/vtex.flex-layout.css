@@ -503,6 +503,10 @@
   padding-bottom: 1rem;
 }
 
+.flexCol--product-price {
+  height: 50px;
+}
+
 .flexRowContent--location-availability {
   align-items: center;
 }

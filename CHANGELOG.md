@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Switch organizations
+- Telemarketing support
+
 ## [0.0.16] - 2022-05-15
 
 ## [0.0.15] - 2022-05-12

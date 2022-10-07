@@ -32,10 +32,6 @@
   border-bottom: var(--b2b-blue-darkest) solid 1px;
 }
 
-.container--b2b-user-widget :global(.vtex-styleguide-9-x-rotate) {
-  margin-left: 110px;
-}
-
 /* .container--b2b-user-widget
   :global(.vtex-flex-layout-0-x-flexRow--b2b-user-widget)
   :global(.vtex-flex-layout-0-x-flexRowContent--b2b-user-widget)

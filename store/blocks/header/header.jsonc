@@ -37,7 +37,7 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      // "flex-layout.row#telemarketing",
+      "flex-layout.row#telemarketing",
       "flex-layout.row#desktop",
       "flex-layout.row#headerStripe"
     ]
@@ -46,7 +46,7 @@
   "flex-layout.row#telemarketing": {
     "children": ["telemarketing"],
     "props": {
-      "blockClass": ["bg-blue-medium"],
+      "blockClass": ["telemarketing"],
       "fullWidth": true
     }
   },
