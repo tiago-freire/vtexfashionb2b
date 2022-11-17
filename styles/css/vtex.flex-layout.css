@@ -93,7 +93,7 @@
 }
 
 .flexRow--b2b-user-widget {
-  background-color: var(--base);
+  width: 300px;
 }
 
 .flexRow--minicart-footer {

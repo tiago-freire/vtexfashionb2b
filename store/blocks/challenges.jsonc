@@ -42,8 +42,61 @@
   "allowed-content#reseller-overlay-trigger": {
     "children": ["overlay-trigger#b2b-user-widget"],
     "props": {
+      "blockClass": "resellerOverlayTrigger"
+    }
+  },
+  "overlay-trigger#b2b-user-widget": {
+    "children": ["link#manage-organization", "overlay-layout#b2b-user-widget"]
+  },
+  "link#manage-organization": {
+    "props": {
+      "label": "Minha Organização",
+      "href": "#",
+      "blockClass": ["resellerLink", "manage-organization-link"]
+    }
+  },
+  "overlay-layout#b2b-user-widget": {
+    "props": {
+      "blockClass": "b2b-user-widget",
+      "placement": "bottom" /* ,
+      "showArrow": true */ /* ,
+      "scrollBehavior": "close-on-scroll",
+      "backdrop": "visible" */
+    },
+    "children": ["flex-layout.row#b2b-user-widget"]
+  },
+
+  /* Overlay trigger do B2B Widget de acordo com as permissões */
+  "check-permission#reseller-disclosure-trigger": {
+    "props": {
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "sales-representative",
+        "customer-admin",
+        "customer-approver",
+        "customer-buyer"
+      ]
+    },
+    "blocks": [
+      "allowed-content#reseller-disclosure-trigger"
+    ]
+  },
+  "allowed-content#reseller-disclosure-trigger": {
+    "children": ["disclosure-layout#b2b-user-widget"],
+    "props": {
       "blockClass": "resellerChallengeContent"
     }
+  },
+  "disclosure-layout#b2b-user-widget": {
+    "children": ["disclosure-trigger#b2b-user-widget", "disclosure-content#b2b-user-widget"]
+  },
+  "disclosure-trigger#b2b-user-widget": {
+    "children": ["link#manage-organization"]
+  },
+  "disclosure-content#b2b-user-widget": {
+    "children": ["b2b-user-widget"]
   },
 
   /* B2B Widget de acordo com as permissões */
@@ -65,7 +118,7 @@
     ]
   },
   "allowed-content#reseller-b2b-user-widget": {
-    "children": ["b2b-user-widget"],
+    // "children": ["b2b-user-widget"],
     "props": {
       "blockClass": "resellerChallengeContent"
     }

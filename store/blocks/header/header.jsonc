@@ -112,20 +112,6 @@
       "flex-layout.col#spacer"
     ]
   },
-
-  "overlay-trigger#b2b-user-widget": {
-    "children": ["b2b-user-widget", "overlay-layout#b2b-user-widget"]
-  },
-  "overlay-layout#b2b-user-widget": {
-    "props": {
-      "blockClass": "b2b-user-widget",
-      "placement": "bottom" /* ,
-      "showArrow": true */ /* ,
-      "scrollBehavior": "close-on-scroll",
-      "backdrop": "visible" */
-    },
-    "children": ["flex-layout.row#b2b-user-widget"]
-  },
   "flex-layout.row#b2b-user-widget": {
     "children": ["flex-layout.col#b2b-user-widget"],
     "props": {
@@ -134,10 +120,11 @@
   },
   "flex-layout.col#b2b-user-widget": {
     "children": [
-      "b2b-switch-organizations",
+      "b2b-user-widget"
+      // "b2b-switch-organizations",
       // "flex-layout.col#permission-description",
-      "link#b2b-user-widget-link-1",
-      "link#b2b-user-widget-link-2"
+      // "link#b2b-user-widget-link-1",
+      // "link#b2b-user-widget-link-2"
     ],
     "props": {
       "blockClass": "b2b-user-widget"
@@ -232,7 +219,8 @@
   "sticky-layout#mobile": {
     "children": [
       "flex-layout.row#mobileHeader",
-      "check-permission#menuLinks"
+      "check-permission#menuLinks",
+      "check-permission#reseller-overlay-trigger"
       // "slider-layout#menuLinks"
     ],
     "props": {
@@ -259,10 +247,10 @@
       "fullWidth": true
     },
     "children": [
-      "check-permission#reseller-b2b-user-widget",
+      // "check-permission#reseller-b2b-user-widget",
       // "check-permission#reseller-overlay-trigger",
-      "check-permission#reseller",
-      "check-permission#orderQuote",
+      // "check-permission#reseller",
+      // "check-permission#orderQuote",
       "rich-text#headStripe1",
       "rich-text#headStripe2",
       "rich-text#headStripe3",
