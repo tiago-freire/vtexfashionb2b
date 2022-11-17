@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## Changed
+
+- Rollback switch organizations because of b2b-user-widget update.
+
 ## [0.0.18] - 2022-10-08
 
 ## [0.0.17] - 2022-10-07
