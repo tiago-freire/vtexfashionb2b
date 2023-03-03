@@ -2,7 +2,7 @@
   // Deprecated
   "newsletter": {
     "props": {
-      "label": "Cadastre seu email para receber 30% de desconto na primeira compra!",
+      "label": "Sign up with your email to receive 30% off on your first purchase!",
       "placeholder": "Email address",
       "submit": "submit"
     }
@@ -27,13 +27,13 @@
   "rich-text#newsletter-title": {
     "props": {
       "blockClass": ["newsletter-title"],
-      "text": "### Cadastre seu email para receber 30% de desconto na primeira compra!"
+      "text": "### Sign up with your email to receive 30% off on your first purchase!"
     }
   },
 
   "rich-text#newsletter-subtitle": {
     "props": {
-      "text": "#### E receber em primeira mão nossas novidades e ofertas."
+      "text": "#### And receive our latest news and offers first-hand."
     }
   },
 

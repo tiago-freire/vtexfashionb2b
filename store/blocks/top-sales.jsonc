@@ -63,7 +63,7 @@
 
   "rich-text#title--top-sales": {
     "props": {
-      "text": "## Mais Vendidos",
+      "text": "## Top Sales",
       "blockClass": "title"
     }
   }

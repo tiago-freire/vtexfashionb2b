@@ -125,31 +125,31 @@
   },
   "rich-text#footerTitle1": {
     "props": {
-      "text": "Formas de pagamento",
+      "text": "Payment methods",
       "blockClass": "footerTitle"
     }
   },
   "rich-text#footer-policy": {
     "props": {
-      "text": "Políticas",
+      "text": "Policies",
       "blockClass": "footerMenuTitle"
     }
   },
   "rich-text#footer-institutional": {
     "props": {
-      "text": "Institucional",
+      "text": "Institutional",
       "blockClass": "footerMenuTitle"
     }
   },
   "rich-text#footer-help": {
     "props": {
-      "text": "Ajuda e Suporte",
+      "text": "Help and Support",
       "blockClass": "footerMenuTitle"
     }
   },
   "rich-text#social-media": {
     "props": {
-      "text": "Redes Sociais",
+      "text": "Social Media",
       "blockClass": "footerMenuTitle"
     }
   },
@@ -316,7 +316,7 @@
   },
   "rich-text#rights": {
     "props": {
-      "text": "VTEX Fashion B2B 2022 @ Todos os direitos reservados",
+      "text": "VTEX Fashion B2B 2023 @ All rights reserved",
       "blockClass": "footerRights"
     }
   },

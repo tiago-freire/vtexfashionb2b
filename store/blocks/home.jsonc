@@ -11,6 +11,7 @@
       // "flex-layout.row#permission-description",
       "check-permission#representative-area",
       "flex-layout.row#imageList",
+      "flex-layout.row#bannerHero2",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
@@ -67,11 +68,11 @@
       "images": [
         {
           "width": "1440px",
-          "image": "assets/banners/banner-top-home-fashion-b2b.png",
-          "mobileImage": "assets/banners/banner-top-home-fashion-b2b.png",
+          "image": "assets/banners/hero-1.png",
+          "mobileImage": "assets/banners/hero-1.png",
           "description": "Moda Verão - Nova Coleção",
           "link": {
-            "url": "/verao"
+            "url": "/shirts"
           }
         }
       ]
@@ -103,7 +104,7 @@
   },
   "rich-text#shopByTitle": {
     "props": {
-      "text": "### Compre por Categorias",
+      "text": "### Shop by Categories",
       "textPosition": "CENTER",
       "blockClass": "shopByCategoryTitle"
     }
@@ -147,7 +148,7 @@
   },
   "rich-text#last-orders-title": {
     "props": {
-      "text": "### Últimos Pedidos [VER TODOS](/account#/orders-history)",
+      "text": "### Last Orders [VIEW ALL](/account#/orders-history)",
       "textPosition": "CENTER",
       "blockClass": "shopByCategoryTitle"
     }
@@ -308,37 +309,37 @@
   },
   "rich-text#cat1": {
     "props": {
-      "text": "Feminino",
+      "text": "Women",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat2": {
     "props": {
-      "text": "Masculino",
+      "text": "Men",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat3": {
     "props": {
-      "text": "Calçados",
+      "text": "Footwear",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat4": {
     "props": {
-      "text": "Infantil",
+      "text": "Children",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat5": {
     "props": {
-      "text": "Acessórios",
+      "text": "Accessories",
       "blockClass": "shopByCategory"
     }
   },
   "rich-text#cat6": {
     "props": {
-      "text": "Marcas",
+      "text": "Brands",
       "blockClass": "shopByCategory"
     }
   },
@@ -510,31 +511,31 @@
   },
   "image#banner-1": {
     "props": {
-      "src": "assets/banners/banner-tshirt-b2b.png",
+      "src": "assets/banners/tshirts.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/camisetas"
+        "url": "/t-shirts"
       }
     }
   },
   "image#banner-2": {
     "props": {
-      "src": "assets/banners/banner-shoes-b2b.png",
+      "src": "assets/banners/outlet.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/sapatos"
+        "url": "/outlet"
       }
     }
   },
   "image#banner-3": {
     "props": {
-      "src": "assets/banners/banner-summer-b2b.png",
+      "src": "assets/banners/summersale.png",
       "maxHeight": 256,
       "blockClass": "bannerThird",
       "link": {
-        "url": "/verao"
+        "url": "/summer"
       }
     }
   },
@@ -573,11 +574,35 @@
       "images": [
         {
           "width": "1440px",
-          "image": "assets/banners/banner-trends-fashion-b2b.png",
-          "mobileImage": "assets/banners/banner-trends-fashion-b2b.png",
+          "image": "assets/banners/new-arrivals.png",
+          "mobileImage": "assets/banners/new-arrivals.png",
           "description": "Novidades da semana",
           "link": {
             "url": "/releases"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.row#bannerHero2": {
+    "props": {
+      "blockClass": "full-banner",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#bannerHero2"]
+  },
+  "list-context.image-list#bannerHero2": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 480,
+      "images": [
+        {
+          "width": "1440px",
+          "image": "assets/banners/hero-2.png",
+          "mobileImage": "assets/banners/hero-2.png",
+          "description": "Basic is the new Basic",
+          "link": {
+            "url": "/pure"
           }
         }
       ]
@@ -597,8 +622,8 @@
       "images": [
         {
           "width": "1440px",
-          "image": "assets/banners/banner-coupon-b2b.png",
-          "mobileImage": "assets/banners/banner-coupon-b2b.png",
+          "image": "assets/banners/wholesale-purchase.png",
+          "mobileImage": "assets/banners/wholesale-purchase.png",
           "description": "Cupom de desconto",
           "link": {
             "url": "/coupon"

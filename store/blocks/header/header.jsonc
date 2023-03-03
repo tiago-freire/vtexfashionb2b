@@ -25,7 +25,7 @@
 
   "rich-text#demo-store-warning": {
     "props": {
-      "text": "Atenção! Esta é uma loja de demonstração da plataforma VTEX. Os produtos, preços e entregas são meramente ilustrativos.",
+      "text": "Attention! This is a VTEX platform demo store. Products, prices and deliveries are merely illustrative.",
       "textPosition": "CENTER",
       "textColor": "c-action-primary",
       "blockClass": "demo-store-warning"
@@ -164,35 +164,35 @@
   "rich-text#headStripe1": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Lançamentos](/releases)"
+      "text": "[Releases](/releases)"
     }
   },
 
   "rich-text#headStripe2": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Ofertas](/deals)"
+      "text": "[Offers](/deals)"
     }
   },
 
   "rich-text#headStripe3": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Mais vendidos](/top-sales)"
+      "text": "[Top sales](/top-sales)"
     }
   },
 
   "rich-text#headStripe4": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Marcas](/services)"
+      "text": "[Brands](/services)"
     }
   },
 
   "rich-text#headStripe5": {
     "props": {
       "blockClass": "HeaderStripeText",
-      "text": "[Acessórios](/gift-cards)"
+      "text": "[Accessories](/gift-cards)"
     }
   },
 
@@ -368,13 +368,13 @@
 
   "login": {
     "props": {
-      "iconLabel": "Entrar"
+      "iconLabel": "Login"
     }
   },
 
   "login#mobile": {
     "props": {
-      "iconLabel": "Entrar"
+      "iconLabel": "Login"
     }
   }
 }

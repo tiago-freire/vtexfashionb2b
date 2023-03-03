@@ -10,8 +10,8 @@
             "type": "internal",
             "href": "/terms",
             "noFollow": false,
-            "tagTitle": "Termos de Uso",
-            "text": "Termos de Uso"
+            "tagTitle": "Terms of Use",
+            "text": "Terms of Use"
           }
         },
         {
@@ -21,8 +21,8 @@
             "type": "internal",
             "href": "/privacy-policy",
             "noFollow": false,
-            "tagTitle": "Política de Privacidade",
-            "text": "Política de Privacidade"
+            "tagTitle": "Privacy Policy",
+            "text": "Privacy Policy"
           }
         },
         {
@@ -32,8 +32,8 @@
             "type": "internal",
             "href": "/cookies-policy",
             "noFollow": false,
-            "tagTitle": "Política de Cookies",
-            "text": "Política de Cookies"
+            "tagTitle": "Cookie Policy",
+            "text": "Cookie Policy"
           }
         }
       ]
@@ -51,8 +51,8 @@
             "type": "internal",
             "href": "/who-we-are",
             "noFollow": false,
-            "tagTitle": "Quem Somos",
-            "text": "Quem Somos"
+            "tagTitle": "Who We Are",
+            "text": "Who We Are"
           }
         },
         {
@@ -62,8 +62,8 @@
             "type": "internal",
             "href": "/stores",
             "noFollow": false,
-            "tagTitle": "Nossas Lojas",
-            "text": "Nossas Lojas"
+            "tagTitle": "Our Stores",
+            "text": "Our Stores"
           }
         },
         {
@@ -73,8 +73,8 @@
             "type": "internal",
             "href": "/papers",
             "noFollow": false,
-            "tagTitle": "Folhetos",
-            "text": "Folhetos"
+            "tagTitle": "Brochures",
+            "text": "Brochures"
           }
         }
       ]
@@ -92,7 +92,7 @@
             // "type": "internal",
             // "href": "/who-we-are",
             // "noFollow": false,
-            // "tagTitle": "Quem Somos",
+            // "tagTitle": "Who We Are",
             "text": "SAC: (21) 3174-5400"
           }
         },
@@ -114,8 +114,8 @@
             // "type": "internal",
             // "href": "/papers",
             // "noFollow": false,
-            // "tagTitle": "Folhetos",
-            "text": "Segunda a sexta das 08h às 22h."
+            // "tagTitle": "Brochures",
+            "text": "Monday to Friday from 08:00 to 22:00."
           }
         },
         {
@@ -125,8 +125,8 @@
             // "type": "internal",
             // "href": "/papers",
             // "noFollow": false,
-            // "tagTitle": "Folhetos",
-            "text": "Sábados das 08h às 20h."
+            // "tagTitle": "Brochures",
+            "text": "Saturdays from 08:00 to 20:00."
           }
         }
       ]

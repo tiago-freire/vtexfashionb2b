@@ -1,8 +1,8 @@
 {
-  "vendor": "bravtexfashionb2b",
+  "vendor": "vtexfashionb2b",
   "name": "b2bstore",
   "version": "0.0.19",
-  "defaultLocale": "pt-BR",
+  "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",

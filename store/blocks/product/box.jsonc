@@ -94,7 +94,7 @@
   "rich-text#product-price": {
     "props": {
       "blockClass": ["product-price-message"],
-      "text": "Faça login ou cadastre-se para visualizar preços"
+      "text": "Login or register to view prices"
     }
   }
 }

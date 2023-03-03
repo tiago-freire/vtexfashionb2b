@@ -21,7 +21,7 @@
   },
   "rich-text#quickOrderTitlePageMobile":{
     "props": {
-      "text": "# Pedido Rápido",
+      "text": "# Quickorder",
       "blockClass": "quickOrderTitlePageMobile"
     }
   },
@@ -43,7 +43,7 @@
   },
   "rich-text#byOneText": {
     "props": {
-      "text": "Digite o nome do produto, selecione, insira a quantidade e adicione ao carrinho",
+      "text": "Enter product name, select it, enter quantity and add to cart",
       "blockClass": "quickOrderButtonText"
     }
   },
@@ -59,13 +59,13 @@
   },
   "rich-text#byCategoryTitle": {
     "props": {
-      "text": "## Categorias",
+      "text": "## Categories",
       "blockClass": "quickOrderButtonTitle"
     }
   },
   "rich-text#byCategoryText": {
     "props": {
-      "text": "Adicione produtos diretamente de suas categorias",
+      "text": "Add products directly from your categories",
       "blockClass": "quickOrderButtonText"
     }
   }

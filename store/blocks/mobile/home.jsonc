@@ -8,6 +8,7 @@
       // "flex-layout.row#permission-description",
       "check-permission#representative-area",
       "flex-layout.row#imageList--mobile",
+      "flex-layout.row#bannerHero2",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
@@ -147,7 +148,7 @@
   },
   "image#singleBannerMobile": {
     "props": {
-      "src": "assets/banners/banner-trends-fashion-b2b.png",
+      "src": "assets/banners/new-arrivals.png",
       "maxHeight": 160,
       "blockClass": "singleBanner"
     }

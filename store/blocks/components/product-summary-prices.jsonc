@@ -42,7 +42,7 @@
   "rich-text#product-summary-price": {
     "props": {
       "blockClass": ["product-summary-price-message"],
-      "text": "Faça login ou cadastre-se para visualizar preços"
+      "text": "Login or register to view prices"
     }
   }
 }

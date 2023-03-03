@@ -53,7 +53,7 @@
   "rich-text#reviews-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["reviews", "disclosure-trigger-heading"],
-      "text": "<span>Avaliações</span>",
+      "text": "<span>Reviews</span>",
       "font": "t-heading-5"
     }
   },

@@ -13,7 +13,7 @@
   },
   "rich-text#alsoViewTitle": {
     "props": {
-      "text": "### Produtos Relacionados",
+      "text": "### Related Products",
       "blockClass": "alsoView"
     }
   },

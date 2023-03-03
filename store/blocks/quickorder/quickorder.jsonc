@@ -95,7 +95,7 @@
   "rich-text#textarea-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
-      "text": "<span>Copiar/Colar SKUs</span>",
+      "text": "<span>Copy/Paste SKUs</span>",
       "font": "t-heading-4"
     }
   },
@@ -126,7 +126,7 @@
   "rich-text#upload-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
-      "text": "<span>Enviar uma Planilha</span>",
+      "text": "<span>Submit a Spreadsheet</span>",
       "font": "t-heading-4"
     }
   },
@@ -157,7 +157,7 @@
   "rich-text#autocomplete-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
-      "text": "<span>Um por Um</span>",
+      "text": "<span>One by One</span>",
       "font": "t-heading-4"
     }
   },
@@ -188,7 +188,7 @@
   "rich-text#quickCategories-disclosure-trigger-heading": {
     "props": {
       "blockClass": ["description", "disclosure-trigger-heading-quickorder"],
-      "text": "<span>Categorias</span>",
+      "text": "<span>Categories</span>",
       "font": "t-heading-4"
     }
   },
@@ -217,13 +217,13 @@
   },
   "rich-text#title": {
     "props": {
-      "text": "### Pedido Rápido",
+      "text": "### Quickorder",
       "blockClass": "titleQuickorder"
     }
   },
   "rich-text#quickorder-subtitle": {
     "props": {
-      "text": "<span>Escolha os métodos de entrada para encomendar seus itens pré-selecionados mais rapidamente e economizar tempo.</span>",
+      "text": "<span>Choose input methods to order your pre-selected items faster and save time.</span>",
       "blockClass": "subtitleQuickorder"
     }
   },
@@ -238,7 +238,7 @@
     "props": {
       "componentOnly": false,
       // "text": "Copiar/Colar Skus",
-      "description": "[Código de Sku],[Quantidade]"
+      "description": "[Sku Code],[Amount]"
     }
   },
 
@@ -252,8 +252,8 @@
     "props": {
       "componentOnly": false,
       // "text": "Upload",
-      "description": "Faça upload de uma planilha com duas colunas (SKU, quantidade) para pedido em massa",
-      "downloadText": "Clique aqui para baixar um modelo de planilha"
+      "description": "Upload spreadsheet with two columns (SKU, quantity) for bulk order",
+      "downloadText": "Click here to download a spreadsheet template"
     }
   },
 
@@ -267,7 +267,7 @@
     "props": {
       "componentOnly": false,
       // "text": "Um por um",
-      "description": "Digite o nome do produto, selecione, insira a quantidade e adicione ao carrinho"
+      "description": "Enter product name, select it, enter quantity and add to cart"
     }
   },
 
@@ -283,8 +283,8 @@
   "quickorder-categories": {
     "props": {
       "componentOnly": false,
-      // "text": "Categorias",
-      "description": "Adicione produtos diretamente de suas categorias"
+      // "text": "Categories",
+      "description": "Add products directly from your categories"
     }
   }
 }

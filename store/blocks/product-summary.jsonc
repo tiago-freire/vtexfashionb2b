@@ -6,6 +6,7 @@
     "children": [
       "flex-layout.row#stackSavings",
       // "product-summary-brand",
+      "product-summary-space",
       "product-summary-name",
       // "product-rating-summary",
       "check-permission#product-summary-price-list",
@@ -36,6 +37,7 @@
     },
     "children": [
       "flex-layout.row#stackSavings",
+      "product-summary-space",
       // "product-summary-brand",
       "product-summary-name",
       // "product-rating-summary",

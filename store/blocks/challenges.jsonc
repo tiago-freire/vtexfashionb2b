@@ -50,7 +50,7 @@
   },
   "link#manage-organization": {
     "props": {
-      "label": "Minha Organização",
+      "label": "My Organization",
       "href": "#",
       "blockClass": ["resellerLink", "manage-organization-link"]
     }

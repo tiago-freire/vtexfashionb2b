@@ -57,7 +57,7 @@
   }
 
   .label::after {
-    content: "Entrar";
+    content: "Login";
     font-family: "Fabriga";
     font-size: 14px;
     line-height: 32px;

@@ -1,7 +1,7 @@
 {
   "my-account-link.wishlist-link": {
     "props": {
-      "label": "Minha Lista de Desejos"
+      "label": "Wishlist"
     }
   },
   "my-account-page.wishlist-page": {

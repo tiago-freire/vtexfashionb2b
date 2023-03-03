@@ -35,7 +35,7 @@
   // },
   "link#reseller": {
     "props": {
-      "label": "Cadastro de Organização",
+      "label": "Organization Request",
       "href": "/organization-request",
       "blockClass": "resellerLink"
     }
@@ -55,13 +55,13 @@
   },
   "rich-text#quickTitle": {
     "props": {
-      "text": "Pedido Rápido",
+      "text": "Quickorder",
       "blockClass": "quickTitle"
     }
   },
   "link#menu-order-quote": {
     "props": {
-      "label": "Minhas cotações",
+      "label": "My quotes",
       "href": "/b2b-quotes",
       "blockClass": "menu-order-quote"
     }
@@ -69,13 +69,13 @@
   "login#drawer": {
     "props": {
       "blockClass": "loginDrawer",
-      "iconLabel": "Entrar",
+      "iconLabel": "Login",
       "mirrorTooltipToRight": true
     }
   },
   "rich-text#explore": {
     "props": {
-      "text": "## Explorar",
+      "text": "## Explore",
       "blockClass": "menuTitle"
     }
   },

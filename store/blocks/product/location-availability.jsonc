@@ -42,7 +42,7 @@
   "rich-text#modal-trigger-shipping-availability": {
     "props": {
       "blockClass": ["modal-trigger-shipping-availability"],
-      "text": "Veja mais opções de envio",
+      "text": "See more shipping options",
       "font": "t-small",
       "textColor": "c-on-action-secondary"
     }
@@ -68,7 +68,7 @@
   "rich-text#shipping-availability": {
     "props": {
       "blockClass": ["reset-spacing"],
-      "text": "###### Opções de envio",
+      "text": "###### Shipping options",
       "font": "t-heading-6"
     }
   },
@@ -212,7 +212,7 @@
   "rich-text#shipping-simulator-title": {
     "props": {
       "blockClass": ["reset-spacing"],
-      "text": "##### Envio",
+      "text": "##### Shipping",
       "font": "t-heading-5"
     }
   },
@@ -220,7 +220,7 @@
   "rich-text#shipping-simulator-text": {
     "props": {
       "blockClass": ["reset-spacing", "fw5", "black-medium"],
-      "text": "Insira o seu CEP",
+      "text": "Enter your zip code",
       "font": "t-small",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"

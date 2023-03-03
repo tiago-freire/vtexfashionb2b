@@ -64,7 +64,7 @@
 
   "rich-text#title--popular": {
     "props": {
-      "text": "## Produtos Populares",
+      "text": "## Popular Products",
       "blockClass": "title"
     }
   }

@@ -52,7 +52,7 @@
 
   "rich-text#size": {
     "props": {
-      "text": "**Tamanho**",
+      "text": "**Size**",
       "blockClass": "skuList",
       "width": "50%",
       "textPosition": "CENTER"
@@ -61,7 +61,7 @@
 
   "rich-text#qty": {
     "props": {
-      "text": "**Quantidade**",
+      "text": "**Quantity**",
       "blockClass": "skuList",
       "width": "50%",
       "textPosition": "CENTER"
@@ -107,7 +107,7 @@
       "conditional": {
         "highlight": "admin/editor.sku-list.highlights.chooseDefaultSpecification",
         // "highlight": "admin/editor.sku-list.highlights.allSpecifications",
-        "typeSpecifications": "TAMANHO"
+        "typeSpecifications": "SIZE"
       },
       "showLabel": false
     }
@@ -159,7 +159,7 @@
     "props": {
       "conditional": {
         "highlight": "admin/editor.sku-list.highlights.chooseDefaultSpecification",
-        "typeSpecifications": "TAMANHO"
+        "typeSpecifications": "SIZE"
       },
       "showLabel": true
     }

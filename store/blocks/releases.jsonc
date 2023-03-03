@@ -63,7 +63,7 @@
 
   "rich-text#title--releases": {
     "props": {
-      "text": "## Novidades da Semana",
+      "text": "## Week Releases",
       "blockClass": "title"
     }
   }
