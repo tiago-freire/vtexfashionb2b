@@ -47,7 +47,7 @@
     "props": {
       "onClickBehavior": "go-to-product-page",
       "blockClass": "buy-now",
-      "text": "Comprar"
+      "text": "Buy"
     }
   }
 }
