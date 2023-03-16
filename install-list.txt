@@ -1,4 +1,5 @@
 vtex install vtex.admin@4.43.1
+vtex install vtex.admin-customers@2.16.5 
 vtex install vtex.admin-home@3.7.2
 vtex install vtex.b2b-checkout-settings@1.4.3 
 vtex install vtex.b2b-orders-history@0.0.6

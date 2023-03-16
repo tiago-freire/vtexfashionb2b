@@ -48,19 +48,8 @@
   .label {
     display: none;
   }
+}
 
-  /* .label {
-    display: block;
-    color: var(--serious-black);
-    font-size: 0;
-    padding: 0;
-  }
-
-  .label::after {
-    content: "Login";
-    font-family: "Fabriga";
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 500;
-  } */
+div[class*="vtex-styleguide-9-x-progressHeight w-100 br4 overflow-hidden bg-light-silver"] {
+  background-color: var(--lines-dark);
 }
