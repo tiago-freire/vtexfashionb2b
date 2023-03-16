@@ -1,7 +1,7 @@
 {
   "vendor": "vtexfashionb2b",
   "name": "b2bstore",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "defaultLocale": "en-US",
   "builders": {
     "assets": "0.x",
