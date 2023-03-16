@@ -167,7 +167,7 @@
 
     $(window).on("checkoutRequestBegin.vtex", function (event, orderForm) {
       if(document.querySelector("#clear-cart")) {
-        document.querySelector("#clear-cart").innerText = "Limpar Carrinho";
+        document.querySelector("#clear-cart").innerText = "Clear Cart";
       }
       fakeSubmitButton.setButtonAsLoading();
       setTimeout(function () {
