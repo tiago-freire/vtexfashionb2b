@@ -195,11 +195,6 @@
     padding: 0px 16px;
   }
 
-  .imageElement--homeSlider {
-    max-height: 384px !important;
-    object-fit: cover;
-  }
-
   .newsletter {
     height: 136px;
   }

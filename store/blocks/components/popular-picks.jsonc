@@ -79,7 +79,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelfTrending"/* ,
       "showNavigationArrows": "desktopOnly",

@@ -7,8 +7,9 @@
     "children": [
       // "flex-layout.row#permission-description",
       "check-permission#representative-area",
-      "flex-layout.row#imageList--mobile",
-      "flex-layout.row#bannerHero2",
+      "flex-layout.row#sales-channel-banner",
+      // "flex-layout.row#imageList--mobile",
+      // "flex-layout.row#bannerHero2",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
@@ -123,7 +124,7 @@
         "phone": 1
       },
       "showNavigationArrows": "never",
-      "infinite": false
+      "infinite": true
     },
     "children": [
       "flex-layout.row#banner1",

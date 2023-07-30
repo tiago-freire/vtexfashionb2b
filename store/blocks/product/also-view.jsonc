@@ -32,7 +32,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelfAlsoView",
       "showNavigationArrows": "desktopOnly"

@@ -220,7 +220,7 @@
     "children": [
       "flex-layout.row#mobileHeader",
       "check-permission#menuLinks",
-      "check-permission#reseller-overlay-trigger"
+      "check-permission#reseller-overlay-trigger-mobile"
       // "slider-layout#menuLinks"
     ],
     "props": {

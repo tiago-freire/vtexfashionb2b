@@ -10,8 +10,9 @@
     "children": [
       // "flex-layout.row#permission-description",
       "check-permission#representative-area",
-      "flex-layout.row#imageList",
-      "flex-layout.row#bannerHero2",
+      "flex-layout.row#sales-channel-banner",
+      // "flex-layout.row#imageList",
+      // "flex-layout.row#bannerHero2",
       "check-permission#lastOrders",
       "flex-layout.row#shopByCategory",
       "__fold__",
@@ -31,53 +32,88 @@
     ]
   },
 
-  "flex-layout.row#permission-description": {
-    "props": {
-      "blockClass": "permission-description",
-      "colSizing": "auto"
-    },
-    "children": [
-      "check-permission#store-admin",
-      "check-permission#sales-admin",
-      "check-permission#sales-manager",
-      "check-permission#sales-representative",
-      "check-permission#customer-admin",
-      "check-permission#customer-approver",
-      "check-permission#customer-buyer"
-    ]
-  },
-
-  "flex-layout.row#imageList": {
+  "flex-layout.row#sales-channel-banner": {
     "props": {
       "blockClass": "full-banner",
       "fullWidth": true
+      // "marginBottom": 8
     },
-    "children": ["list-context.image-list#homeBanners"]
+    "children": ["flex-layout.col#sales-channel-banner"]
   },
-  "flex-layout.row#imageList--mobile": {
-    "props": {
-      "blockClass": ["full-banner", "full-banner--mobile"],
-      "fullWidth": true
-    },
-    "children": ["list-context.image-list#homeBanners"]
+
+  "flex-layout.col#sales-channel-banner": {
+    "children": ["sales-channel-banner"]
   },
-  "list-context.image-list#homeBanners": {
-    "children": ["slider-layout#demo-images"],
+
+  "sales-channel-banner": {
+    "title": "Banners por política comercial",
+    "children": ["slider-layout#sales-channel-banner"],
     "props": {
-      "height": 480,
+      "height": 400,
+      "heightMobile": 150,
+      "autoplay": 8000,
       "images": [
         {
-          "width": "1440px",
-          "image": "assets/banners/hero-1.png",
-          "mobileImage": "assets/banners/hero-1.png",
-          "description": "Moda Verão - Nova Coleção",
+          "image": "https://vtexfashionb2b.vtexassets.com/assets/vtex.file-manager-graphql/images/3dc17d8a-0f12-444f-8772-51bd767fbe28___20d0e823a6a8ca12d82af9eb3972fa6f.png",
+          "description": "Denim Skirts",
           "link": {
-            "url": "/shirts"
+            "url": "/denim%20skirts?_q=denim%20skirts&map=ft"
+          }
+        },
+        {
+          "image": "https://vtexfashionb2b.vtexassets.com/assets/vtex.file-manager-graphql/images/16a12448-0b7c-4c9f-a111-fa4105d2d9e8___9bead1d742c5db6b37c453e4cb7340df.png",
+          "description": "T-Shirts",
+          "link": {
+            "url": "/tshirts?_q=tshirts&map=ft"
           }
         }
       ]
     }
   },
+  "slider-layout#sales-channel-banner": {
+    "title": "Slider dos banners por política comercial",
+    "props": {
+      "blockClass": ["homeSlider", "dotsCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+  // "flex-layout.row#imageList": {
+  //   "props": {
+  //     "blockClass": "full-banner",
+  //     "fullWidth": true
+  //   },
+  //   "children": ["list-context.image-list#homeBanners"]
+  // },
+  // "flex-layout.row#imageList--mobile": {
+  //   "props": {
+  //     "blockClass": ["full-banner", "full-banner--mobile"],
+  //     "fullWidth": true
+  //   },
+  //   "children": ["list-context.image-list#homeBanners"]
+  // },
+  // "list-context.image-list#homeBanners": {
+  //   "children": ["slider-layout#demo-images"],
+  //   "props": {
+  //     "height": 480,
+  //     "images": [
+  //       {
+  //         "width": "1440px",
+  //         "image": "assets/banners/hero-1.png",
+  //         "mobileImage": "assets/banners/hero-1.png",
+  //         "description": "Moda Verão - Nova Coleção",
+  //         "link": {
+  //           "url": "/shirts"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
   "slider-layout#demo-images": {
     "props": {
       "blockClass": ["homeSlider", "dotsCustom"],
@@ -445,7 +481,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "showPaginationDots": "desktopOnly",
       "showNavigationArrows": "desktopOnly",
@@ -459,7 +495,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "shelfStyle1"
